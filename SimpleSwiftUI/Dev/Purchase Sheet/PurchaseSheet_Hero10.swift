@@ -186,7 +186,7 @@ struct PurchaseSheet_Hero10_Previews: PreviewProvider {
     static var previews: some View {
         PurchaseSheet_Hero10(state: state)
             .previewLayout(.fixed(width: 600, height: 850))
-        PurchaseSheet_Hero10(state: state).thumbnail
-            .previewLayout(.fixed(width: 128, height: 128))
+//        PurchaseSheet_Hero10(state: state).thumbnail
+//            .previewLayout(.fixed(width: 128, height: 128))
     }
 }
