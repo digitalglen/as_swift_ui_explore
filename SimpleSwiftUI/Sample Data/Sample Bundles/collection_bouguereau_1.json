@@ -1,0 +1,81 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.bouguereau.1",
+            "productid":"com.digitalglen.cutouts.bouguereau.1",
+            "title":"Bouguereau I",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"bouguereau-a-childhood-idyll-1900",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"A Childhood Idyll",
+            "year":"1900",
+        },
+        {
+            "uid":"bouguereau-far-from-home-1874",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Far From Home",
+            "year":"1874",
+        },
+        {
+            "uid":"bouguereau-lady-maxwell-1890",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Lady Maxwell",
+            "year":"1890",
+        },
+        {
+            "uid":"bouguereau-moissoneuse-1868",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Moissoneuse",
+            "year":"1868",
+        },
+        {
+            "uid":"bouguereau-parure-des-champs-1884",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Parure des Champs",
+            "year":"1884",
+        },
+        {
+            "uid":"bouguereau-portrait-of-gabrielle-cot-1890",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Portrait of Gabrielle Cot",
+            "year":"1890",
+            "brightness-thumb-center":"light",
+        },
+        {
+            "uid":"bouguereau-the-bird-ch-ri-1867",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"The Bird Ch Ri",
+            "year":"1867",
+        },
+        {
+            "uid":"bouguereau-the-crab-1869",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"The Crab",
+            "year":"1869",
+        },
+        {
+            "uid":"bouguereau-the-nut-gatherers-1882",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"The Nut Gatherers",
+            "year":"1882",
+        },
+        {
+            "uid":"bouguereau-the-shell-1871",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"The Shell",
+            "year":"1871",
+        },
+        {
+            "uid":"bouguereau-woman-of-cervara-and-her-child-1861",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Woman of Cervara and her Child",
+            "year":"1861",
+        }
+    ]
+}
+

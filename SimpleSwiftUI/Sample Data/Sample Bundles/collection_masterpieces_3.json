@@ -1,0 +1,101 @@
+{
+    "bundle": [
+        {
+            "uid":"masterpieces.3",
+            "productid":"com.digitalglen.cutouts.masterpieces.3",
+            "title":"Masterpieces III",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"ghirlandaio_1",
+            "artist":"Domenico Ghirlandaio",
+            "title":"An Old Man and His Grandson",
+            "title-en":"An Old Man and His Grandson",
+            "title-it":"Ritratto di Nonno con Nipote",
+            "year":"1490",
+            "format":"hex-large",
+        },
+        {
+            "uid":"ghirlandaio_2",
+            "artist":"Domenico Ghirlandaio",
+            "title":"Portrait of Giovanna Tornabuoni",
+            "year":"1488",
+            "format":"hex-medium",
+        },
+        {
+            "uid":"macke_1",
+            "artist":"August Macke",
+            "title":"View into a Lane",
+            "title-de":"Blick in eine Gasse",
+            "title-fr":"Vue dans une ruelle",
+            "year":"1914",
+            "format":"hex-small",
+            "format-iphone":"hex-large",
+            "brightness-thumb-bottom-right":"light",
+        },
+        {
+            "uid":"durer_1",
+            "artist":"Albrecht Dürer",
+            "title":"A Young Hare",
+            "year":"1502",
+            "format":"tile-large",
+        },
+        {
+            "uid":"van-der-weyden-portrait-of-a-lady-1460",
+            "artist":"Rogier van der Weyden",
+            "title":"Portrait of a Lady",
+            "year":"1460",
+            "format":"tile-medium",
+        },
+        {
+            "uid":"durer_2",
+            "artist":"Albrecht Dürer",
+            "title":"Oswalt Krel",
+            "year":"1499",
+            "format":"tile-medium",
+            "format-iphone":"tile-large",
+            "brightness-thumb-bottom-right":"light",
+        },
+        {
+            "uid":"remington-buying-polo-ponies-in-the-west-1905",
+            "artist":"Frederic Remington",
+            "title":"Buying Polo Ponies in the West",
+            "year":"1905",
+            "format":"circle-large",
+        },
+        {
+            "uid":"pissarro-l-hermitage-at-pontoise-1867",
+            "artist":"Camille Pissarro",
+            "title":"L'Hermitage at Pontoise",
+            "year":"1867",
+            "format":"circle-medium",
+        },
+        {
+            "uid":"van-eyck-st-jerome-in-his-study-1442",
+            "artist":"Jan van Eyck",
+            "title":"St. Jerome in his Study",
+            "year":"1442",
+            "format":"circle-small",
+            "format-iphone":"circle-large",
+        },
+        {
+            "uid":"vangogh_2",
+            "artist":"Vincent Van Gogh",
+            "title":"Joseph Roulin (The Postman)",
+            "year":"1889",
+            "format":"hex-small",
+            "format-iphone":"hex-large",
+        },
+        {
+            "uid":"vangogh_3",
+            "artist":"Vincent Van Gogh",
+            "title":"Wheat Field with Crows",
+            "year":"1890",
+            "format":"circle-medium",
+            "brightness-thumb-bottom-right":"light",
+        }
+    ]
+}

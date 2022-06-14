@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.bouguereau.2",
+            "productid":"com.digitalglen.cutouts.bouguereau.2",
+            "title":"Bouguereau II",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"bouguereau-a-little-coaxing-1890",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"A Little Coaxing",
+            "year":"1890",
+        },
+        {
+            "uid":"bouguereau-at-the-edge-of-the-brook-1875",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"At the Edge of the Brook",
+            "year":"1875",
+        },
+        {
+            "uid":"bouguereau-daisies-1894",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Daisies",
+            "year":"1894",
+        },
+        {
+            "uid":"bouguereau-gypsy-girl-with-a-basque-drum-1867",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Gypsy Girl with a Basque Drum",
+            "year":"1867",
+        },
+        {
+            "uid":"bouguereau-homer-and-his-guide-1874",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Homer and his Guide",
+            "year":"1874",
+        },
+        {
+            "uid":"bouguereau-knitting-machine-1879",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Knitting Machine",
+            "year":"1879",
+        },
+        {
+            "uid":"bouguereau-little-sulky-1888",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Little Sulky",
+            "year":"1888",
+        },
+        {
+            "uid":"bouguereau-pleasant-burden-1895",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Pleasant Burden",
+            "year":"1895",
+        },
+        {
+            "uid":"bouguereau-rest-in-harvest",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Rest in Harvest",
+            "year":"",
+        },
+        {
+            "uid":"bouguereau-self-portrait-presented-to-m-sage-1886",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"Self-Portrait Presented to M. Sage",
+            "year":"1886",
+        },
+        {
+            "uid":"bouguereau-the-secret-1876",
+            "artist":"William-Adolphe Bouguereau",
+            "title":"The Secret",
+            "year":"1876",
+        }
+    ]
+}
+

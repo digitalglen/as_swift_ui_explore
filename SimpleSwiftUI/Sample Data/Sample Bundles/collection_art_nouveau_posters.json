@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.art.nouveau.posters",
+            "productid":"com.digitalglen.cutouts.art.nouveau.posters",
+            "title":"Art Nouveau Posters",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"henri-priva-livemont-Absinthe-Robette-1896",
+            "artist":"Henri Privat-Livemont",
+            "title":"Absinthe Robette",
+            "year":"1896",
+        },
+        {
+            "uid":"ivan-bilibin-Ivan-Tsarevich-catching-the-Firebird's-feather-1899",
+            "artist":"Ivan Yakovlevich Bilibin",
+            "title":"Ivan Tsarevich Catching the Firebird's Feather",
+            "year":"1899",
+        },
+        {
+            "uid":"ivan-bilibin-Vasilisa-the-Beautiful-1899",
+            "artist":"Ivan Yakovlevich Bilibin",
+            "title":"Vasilisa the Beautiful",
+            "year":"1899",
+        },
+        {
+            "uid":"mucha-beer-of-the-meuse-1897",
+            "artist":"Alphonse Mucha",
+            "title":"Bières de la Meuse",
+            "year":"1897",
+        },
+        {
+            "uid":"mucha-biscuits-lefevre-Utile-1896",
+            "artist":"Alphonse Mucha",
+            "title":"Biscuits-Lefevre-Utile",
+            "year":"1896",
+        },
+        {
+            "uid":"mucha-blue-deschamps-1896",
+            "artist":"Alphonse Mucha",
+            "title":"Blue Deschamps",
+            "year":"1896",
+        },
+        {
+            "uid":"mucha-F.-Champenois-Imprimeur-Editeur-1897",
+            "artist":"Alphonse Mucha",
+            "title":"F. Champenois Imprimeur Editeur",
+            "year":"1897",
+        },
+        {
+            "uid":"mucha-Job-Cigarettes-1-1896",
+            "artist":"Alphonse Mucha",
+            "title":"Job Cigarettes 1",
+            "year":"1896",
+        },
+        {
+            "uid":"mucha-zodiac-1896",
+            "artist":"Alphonse Mucha",
+            "title":"Zodiac",
+            "year":"1897",
+        },
+        {
+            "uid":"Sonrel_Our_Lady_of_the_Cow_Parsley-1900",
+            "artist":"Élisabeth Sonrel",
+            "title":"Our Lady of the Cow Parsley",
+            "year":"1900",
+        },
+        {
+            "uid":"steinlen-la-tournée-du-Chat-Noir-1896",
+            "artist":"Théophile Steinlen",
+            "title":"La Tournée du Chat Noir",
+            "year":"1896",
+        }
+    ]
+}
+

@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"library-of-congress-2",
+            "productid":"com.digitalglen.cutouts.loc.2",
+            "title":"Library of Congress II",
+            "keywords":"masterpiece, art"
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"loc-barker-vermont-state-fair",
+            "artist":"Library of Congress",
+            "title":"Barker, Vermont State Fair",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-boy-scouts-at-capitol",
+            "artist":"Library of Congress",
+            "title":"Boy Scouts at Capitol",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-court-day-campton-ky",
+            "artist":"Library of Congress",
+            "title":"Court Day, Campton, Kentucky",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-faro-and-doris-caudill-homesteaders-ie-town-nm",
+            "artist":"Library of Congress",
+            "title":"Faro and Doris Caudill, Homesteaders, Pie Town, New Mexico",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-filling-station-pie-town-new-mexico",
+            "artist":"Library of Congress",
+            "title":"Filling Station, Pie Town, New Mexico",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-girls-at-the-vermont-state-fair",
+            "artist":"Library of Congress",
+            "title":"Girls at the Vermont State Fair",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-grand-grocery-lincoln-neb",
+            "artist":"Library of Congress",
+            "title":"Grand Grocery, Lincoln, Nebraska",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-headlines-in-window-brockton-mass",
+            "artist":"Library of Congress",
+            "title":"Men Reading Headlines Posted in Street-Corner of Brockton Enterprise Newspaper Office, Brockton, Massachusetts",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-service-station-jax",
+            "artist":"Library of Congress",
+            "title":"A Crossroads Store, Bar, 'Juke Joint,' and Gas Station, Melrose, Louisiana",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-serving-up-the-barbeque-at-the-pie-town-nm-fair",
+            "artist":"Library of Congress",
+            "title":"Serving Up the Barbeque at the Fair, Pie Town, New Mexico",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-sorting-and-packing-tomatoes-puerto-rico",
+            "artist":"Library of Congress",
+            "title":"Sorting and Packing Tomatoes, Puerto Rico",
+            "year":"1942",
+        }
+    ]
+}
+

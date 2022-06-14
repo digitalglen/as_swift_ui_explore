@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.masterpieces.5",
+            "productid":"com.digitalglen.cutouts.masterpieces.5",
+            "title":"Masterpieces V",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"goya-the-third-of-may-1808",
+            "artist":"Francisco Goya",
+            "title":"The Third of May",
+            "year":"1808",
+        },
+        {
+            "uid":"ingres-portrait-of-mme_Moitessier-1856",
+            "artist":"Jean-Auguste-Dominique Ingres",
+            "title":"Portrait of Mme. Moitessier",
+            "year":"1856",
+        },
+        {
+            "uid":"Jacques-Louis_David,_oath-of-the-horatii--1784",
+            "artist":"Jacques-Louis David",
+            "title":"Oath of the Horatii",
+            "year":"1784",
+        },
+        {
+            "uid":"John_Singleton_Copley_-_A_Boy_with_a_Flying_Squirrel_(Henry_Pelham)-1765",
+            "artist":"John Singleton Copley",
+            "title":"A Boy with a Flying Squirrel (Henry Pelham)",
+            "year":"1765",
+        },
+        {
+            "uid":"john-singer-gardner-el-jaleo-1882",
+            "artist":"John Singer Sargent",
+            "title":"El Jaleo",
+            "year":"1882",
+        },
+        {
+            "uid":"Joseph-Wright-of-Derby-_a_philosopher_giving_a_lecture_at_the_orrery-1766",
+            "artist":"Joseph Wright of Derby",
+            "title":"A Philosopher Giving a Lecture at the Orrery",
+            "year":"1766",
+        },
+        {
+            "uid":"juan-sánchez-cotán-Still_Life_with_Game_Fowl,Vegetables_and_Fruits-1602",
+            "artist":"Juan Sánchez Cotán",
+            "title":"Still Life with Game Fowl, Vegetables, and Fruits",
+            "year":"1602",
+        },
+        {
+            "uid":"klimt-the-kiss-1909",
+            "artist":"Gustav Klimt",
+            "title":"The Kiss",
+            "year":"1909",
+        },
+        {
+            "uid":"munch-the-scream-1893",
+            "artist":"Edvard Munch",
+            "title":"The Scream",
+            "year":"1893",
+        },
+        {
+            "uid":"Paolo_Uccello-the-battle-of-san-romano-1460",
+            "artist":"Paolo Uccello",
+            "title":"The Battle of San Romano",
+            "year":"1460",
+        },
+        {
+            "uid":"raphael-Young-Woman-with-Unicorn-1506",
+            "artist":"Raphael",
+            "title":"Young Woman with Unicorn",
+            "year":"1506",
+        }
+    ]
+}
+

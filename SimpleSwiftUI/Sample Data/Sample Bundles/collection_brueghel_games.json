@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"brueghel-games",
+            "productid":"com.digitalglen.cutouts.brueghel.games",
+            "title":"Brueghel Games",
+            "keywords":"masterpiece, art"
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"brueghel-games-1",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Children's Games",
+            "year":"1560",
+        },
+        {
+            "uid":"brueghel-games-2",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Children's Games - (Inflating a pig's bladder to create a balloon)",
+            "year":"1560",
+        },
+        {
+            "uid":"brueghel-games-3",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Children's Games (The Pope's Seat, gripping hands to hold someone)",
+            "year":"1560",
+        },
+        {
+            "uid":"brueghel-games-4",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Children's Games (Blowing bubbles)",
+            "year":"1560",
+        },
+        {
+            "uid":"brueghel-games-5",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Children's Games (Standing on your head)",
+            "year":"1560",
+        },
+        {
+            "uid":"brueghel-games-6",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Children's Games (Leapfrog)",
+            "year":"1560",
+        },
+        {
+            "uid":"brueghel-games-7",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Children's Games (Walking on stilts)",
+            "year":"1560",
+        },
+        {
+            "uid":"brueghel-games-8",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Children's Games (Playing marbles)",
+            "year":"1560",
+        },
+        {
+            "uid":"brueghel-games-9",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Children's Games (Balancing a pole on your finger)",
+            "year":"1560",
+        },
+        {
+            "uid":"brueghel-games-10",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Children's Games (Pirouetting skirts)",
+            "year":"1560",
+        },
+        {
+            "uid":"brueghel-games-11",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Children's Games (Riding a barrel)",
+            "year":"1560",
+        }
+    ]
+}
+

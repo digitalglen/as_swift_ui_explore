@@ -1,0 +1,81 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.masterpieces.6",
+            "productid":"com.digitalglen.cutouts.masterpieces.6",
+            "title":"Masterpieces VI",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"giorgione-three-philosophers-1508",
+            "artist":"Giorgione",
+            "title":"Three Philosophers",
+            "year":"1508",
+        },
+        {
+            "uid":"piero-della-francesca-the-baptism-of-christ-1450",
+            "artist":"Piero della Francesca",
+            "title":"The Baptism of Christ",
+            "year":"1450",
+        },
+        {
+            "uid":"pieter-claesz-vanitas-1630",
+            "artist":"Pieter Claesz",
+            "title":"Vanitas",
+            "year":"1630",
+        },
+        {
+            "uid":"pontormo-portrait-of-a-lady-in-red-dress-1533",
+            "artist":"Pontormo",
+            "title":"Portrait of a Lady in Red Dress",
+            "year":"1533",
+        },
+        {
+            "uid":"raphael-the-holy-family-of-francis-I-1518",
+            "artist":"Raphael",
+            "title":"The Holy Family of Francis I",
+            "year":"1518",
+        },
+        {
+            "uid":"rembrandt-portrait-of-an-elderly-man-1667",
+            "artist":"Rembrandt van Rijn",
+            "title":"Portrait of an Elderly Man",
+            "year":"1667",
+        },
+        {
+            "uid":"samuel-van-hoogstraten-trompe-l'oeil-1678",
+            "artist":"Samuel van Hoogstraten",
+            "title":"Trompe-l'œil",
+            "year":"1678",
+        },
+        {
+            "uid":"the-grand-canal-from-the-campo-san-vio-venice",
+            "artist":"Canaletto",
+            "title":"The Grand Canal from the Campo San Vio Venice",
+            "year":"1760",
+        },
+        {
+            "uid":"tissot-young-lady-in-a-boat-1870",
+            "artist":"James Tissot",
+            "title":"Young Lady in a Boat",
+            "year":"1870",
+        },
+        {
+            "uid":"velazquez-las-meninas-1656",
+            "artist":"Diego Velázquez",
+            "title":"Las Meninas",
+            "year":"1656",
+        },
+        {
+            "uid":"victor-gilbert-market-day-1882",
+            "artist":"Victor Gilbert",
+            "title":"Market Day",
+            "year":"1882",
+        }
+    ]
+}
+
+

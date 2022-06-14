@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.angelico.1",
+            "productid":"com.digitalglen.cutouts.angelico.1",
+            "title":"Fra Angelico I",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"angelico-bosco-ai-frati-altarpiece",
+            "artist":"Fra Angelico",
+            "title":"Bosco ai Frati Altarpiece",
+            "year":"1450",
+        },
+        {
+            "uid":"angelico-condemnation-of-st-lawrence-by-the-emperor-valerian-1449",
+            "artist":"Fra Angelico",
+            "title":"Condemnation of St. Lawrence by the Emperor Valerian",
+            "year":"1449",
+        },
+        {
+            "uid":"angelico-coronation-of-the-virgin-(detail)-1435",
+            "artist":"Fra Angelico",
+            "title":"Coronation of the Virgin (detail)",
+            "year":"1435",
+        },
+        {
+            "uid":"angelico-madonna-with-saints-1450",
+            "artist":"Fra Angelico",
+            "title":"Madonna with Saints",
+            "year":"1450",
+        },
+        {
+            "uid":"angelico-perugia-altarpiece-left-panel-1448",
+            "artist":"Fra Angelico",
+            "title":"Perugia Altarpiece (left panel)",
+            "year":"1448",
+        },
+        {
+            "uid":"angelico-receiving-the-stigmata-1429",
+            "artist":"Fra Angelico",
+            "title":"Receiving the Stigmata",
+            "year":"1429",
+        },
+        {
+            "uid":"angelico-saint-lawrence-receiving-the-treasures-of-the-church-from-pope-sixtus-ii-1449",
+            "artist":"Fra Angelico",
+            "title":"St. Lawrence Receiving the Treasures of the Church from Pope Sixtus II",
+            "year":"1449",
+        },
+        {
+            "uid":"angelico-st-lawrence-distributing-alms-1450",
+            "artist":"Fra Angelico",
+            "title":"St. Lawrence Distributing Alms",
+            "year":"1450",
+        },
+        {
+            "uid":"angelico-the-story-of-st-nicholas-1448",
+            "artist":"Fra Angelico",
+            "title":"The Story of St. Nicholas",
+            "year":"1448",
+        },
+        {
+            "uid":"angelico-the-virgin-of-the-annunciation-1446",
+            "artist":"Fra Angelico",
+            "title":"The Virgin of the Annunciation",
+            "year":"1446",
+        },
+        {
+            "uid":"angelico-virgin-mary-annunciate-1433",
+            "artist":"Fra Angelico",
+            "title":"Virgin Mary Annuciate",
+            "year":"1433",
+        }
+    ]
+}
+

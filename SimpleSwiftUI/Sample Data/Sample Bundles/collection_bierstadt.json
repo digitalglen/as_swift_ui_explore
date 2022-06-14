@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"bierstadt",
+            "productid":"com.digitalglen.cutouts.bierstadt",
+            "title":"Bierstadt",
+            "keywords":"masterpiece, art"
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"bierstadt-1",
+            "artist":"Alfred Bierstadt",
+            "title":"Looking Down Yosemite Valley",
+            "year":"1865",
+        },
+        {
+            "uid":"bierstadt-2",
+            "artist":"Alfred Bierstadt",
+            "title":"A Storm in the Rocky Mountains, Mt. Rosalie",
+            "year":"1866",
+        },
+        {
+            "uid":"bierstadt-3",
+            "artist":"Alfred Bierstadt",
+            "title":"Among the Sierra Nevadas",
+            "year":"1868",
+        },
+        {
+            "uid":"bierstadt-4",
+            "artist":"Alfred Bierstadt",
+            "title":"California Spring",
+            "year":"1875",
+        },
+        {
+            "uid":"bierstadt-5",
+            "artist":"Alfred Bierstadt",
+            "title":"Emigrants Crossing the Plains",
+            "year":"1867",
+        },
+        {
+            "uid":"bierstadt-6",
+            "artist":"Alfred Bierstadt",
+            "title":"In the Rockies",
+            "year":"1863",
+        },
+        {
+            "uid":"bierstadt-7",
+            "artist":"Alfred Bierstadt",
+            "title":"Indians Spear Fishing",
+            "year":"1862",
+        },
+        {
+            "uid":"bierstadt-8",
+            "artist":"Alfred Bierstadt",
+            "title":"Nassau Harbor",
+            "year":"1877",
+        },
+        {
+            "uid":"bierstadt-9",
+            "artist":"Alfred Bierstadt",
+            "title":"Rocky Mountain Landscape",
+            "year":"1870",
+        },
+        {
+            "uid":"bierstadt-10",
+            "artist":"Alfred Bierstadt",
+            "title":"Sunrise, Yosemite Valley",
+            "year":"1870",
+        },
+        {
+            "uid":"bierstadt-11",
+            "artist":"Alfred Bierstadt",
+            "title":"Wind River Country",
+            "year":"1860",
+        }
+    ]
+}
+

@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.bosch.haywain",
+            "productid":"com.digitalglen.cutouts.bosch.haywain",
+            "title":"Bosch Haywain",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"bosch-the-haywain-triptych-center-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"The Haywain Triptych (Center Panel)",
+            "year":"1516",
+        },
+        {
+            "uid":"bosch-the-haywain-triptych-center-panel-detail-1-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"The Haywain Triptych (Center Panel) - Detail 1",
+            "year":"1516",
+        },
+        {
+            "uid":"bosch-the-haywain-triptych-center-panel-detail-2-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"The Haywain Triptych (Center Panel) - Detail 2",
+            "year":"1516",
+        },
+        {
+            "uid":"bosch-the-haywain-triptych-center-panel-detail-3-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"The Haywain Triptych (Center Panel) - Detail 3",
+            "year":"1516",
+        },
+        {
+            "uid":"bosch-the-haywain-triptych-center-panel-detail-4-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"The Haywain Triptych (Center Panel) - Detail 4",
+            "year":"1516",
+        },
+        {
+            "uid":"bosch-the-haywain-triptych-center-panel-detail-5-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"The Haywain Triptych (Center Panel) - Detail 5",
+            "year":"1516",
+        },
+        {
+            "uid":"bosch-the-haywain-triptych-center-panel-detail-6-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"The Haywain Triptych (Center Panel) - Detail 6",
+            "year":"1516",
+        },
+        {
+            "uid":"bosch-the-haywain-triptych-center-panel-detail-7-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"The Haywain Triptych (Center Panel) - Detail 7",
+            "year":"1516",
+        },
+        {
+            "uid":"bosch-the-haywain-triptych-center-panel-detail-8-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"The Haywain Triptych (Center Panel) - Detail 8",
+            "year":"1516",
+        },
+        {
+            "uid":"bosch-the-haywain-triptych-center-panel-detail-9-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"The Haywain Triptych (Center Panel) - Detail 9",
+            "year":"1516",
+        },
+        {
+            "uid":"bosch-the-haywain-triptych-center-panel-detail-10-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"The Haywain Triptych (Center Panel) - Detail 10",
+            "year":"1516",
+        }
+    ]
+}
+

@@ -1,0 +1,79 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.masterpieces.4",
+            "productid":"com.digitalglen.cutouts.masterpieces.4",
+            "title":"Masterpieces IV",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"book-of-kells-madonna-and-child-c.800AD",
+            "artist":"Celtic Monks",
+            "title":"Book of Kells, Madonna and Child",
+            "year":"800 AD",
+        },
+        {
+            "uid":"botticelli-cestello-annunciation-1490",
+            "artist":"Sandro Botticelli",
+            "title":"Cestello Annunciation",
+            "year":"1490",
+        },
+        {
+            "uid":"caravaggio-saint-jerome-1606",
+            "artist":"Caravaggio",
+            "title":"Saint Jerome",
+            "year":"1606",
+        },
+        {
+            "uid":"caspar-david-friedrich-wreck-in-the-sea-of-ice-1824",
+            "artist":"Caspar David Friedrich",
+            "title":"Wreck in the Sea of Ice",
+            "year":"1824",
+        },
+        {
+            "uid":"da-vinci-La-belle-ferronnière-1496",
+            "artist":"Leonardo da Vinci",
+            "title":"La Belle Ferronnière",
+            "year":"1496",
+        },
+        {
+            "uid":"david-napoleon-crossing-the-alps-1801",
+            "artist":"Jacques-Louis David",
+            "title":"Napoleon Crossing the Alps",
+            "year":"1801",
+        },
+        {
+            "uid":"diego-velázquez-portrait-of-pope-innocent-x-1650",
+            "artist":"Diego Velázquez",
+            "title":"Portrait of Pope Innocent X",
+            "year":"1650",
+        },
+        {
+            "uid":"giorgione-castelfranco-madonna-(madonna-and-child-between-st.-francis-and-st.-nicasius)-1504",
+            "artist":"Giorgione",
+            "title":"Castelfranco Madonna (Madonna and Child Between St. Francis and St. Nicasius)",
+            "year":"1504",
+        },
+        {
+            "uid":"goya-the-duchess-of-alba-1797",
+            "artist":"Francisco Goya",
+            "title":"The Duchess of Alba",
+            "year":"1797",
+        },
+        {
+            "uid":"henry-ossawa-tanner-gateway,-tangier-1912",
+            "artist":"Henry Ossawa Tanner",
+            "title":"Gateway, Tangier",
+            "year":"1912",
+        },
+        {
+            "uid":"raphael-sistine-madonna-1514",
+            "artist":"Raphael",
+            "title":"Sistine Madonna",
+        }
+    ]
+}
+

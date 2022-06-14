@@ -1,0 +1,73 @@
+{
+    "bundle": [
+        {
+            "uid":"masterpieces.1",
+            "productid":"com.digitalglen.cutouts.masterpieces.1",
+            "title":"Masterpieces I",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"altdorfer_1",
+            "artist":"Altdorfer",
+            "title":"The Battle of Alexander at Issus",
+            "year":"1909",
+        },
+        {
+            "uid":"angelico_1",
+            "artist":"Angelico",
+            "title":"St. Peter Consecrates St. Lawrence",
+        },
+        {
+            "uid":"audobon_1",
+            "artist":"Audobon",
+            "title":"Snowy Owls",
+        },
+        {
+            "uid":"cassatt_1",
+            "artist":"Mary Cassatt",
+            "title":"The Bath",
+        },
+        {
+            "uid":"cezanne_1",
+            "artist":"Cezanne",
+            "title":"The Blue Vase",
+        },
+        {
+            "uid":"coolidge_1",
+            "artist":"Coolidge",
+            "title":"A Friend in Need",
+            "year":"1909",
+        },
+        {
+            "uid":"copley_1",
+            "artist":"Copley",
+            "title":"Portrait of Paul Revere",
+        },
+        {
+            "uid":"gainsborough_1",
+            "artist":"Gainsborough",
+            "title":"The Blue Boy",
+            "year":"1909",
+        },
+        {
+            "uid":"goya_1",
+            "artist":"Goya",
+            "title":"Portrait of Maria Theresa de Vallabriga on Horseback",
+            "year":"1909",
+        },
+        {
+            "uid":"gris_1",
+            "artist":"Juan Gris",
+            "title":"Portrait of Pablo Picasso",
+            "year":"1909",
+        },
+        {
+            "uid":"toulouse_lautrec_1",
+            "artist":"Henri de Toulouse Lautrec",
+            "title":"Moulin Rouge",
+        }
+    ]
+}

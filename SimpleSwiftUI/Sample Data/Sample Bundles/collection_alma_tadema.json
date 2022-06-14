@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.alma.tadema",
+            "productid":"com.digitalglen.cutouts.alma.tadema",
+            "title":"Alma-Tadema",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"alma-tadema-an-oleander-1882",
+            "artist":"Lawrence Alma-Tadema",
+            "title":"An Oleander",
+            "year":"1882",
+        },
+        {
+            "uid":"alma-tadema-anna-alma-tadema-1883",
+            "artist":"Lawrence Alma-Tadema",
+            "title":"Anna Alma-Tadema",
+            "year":"1883",
+        },
+        {
+            "uid":"alma-tadema-bluebells",
+            "artist":"Lawrence Alma-Tadema",
+            "title":"Bluebells",
+            "year":"1880",
+        },
+        {
+            "uid":"alma-tadema-cherries-1873",
+            "artist":"Lawrence Alma-Tadema",
+            "title":"Cherries",
+            "year":"1873",
+        },
+        {
+            "uid":"alma-tadema-flora-spring-in-the-gardens-of-the-villa-borghese-1877",
+            "artist":"Lawrence Alma-Tadema",
+            "title":"Flora Spring in the Gardens of the Villa Borghese",
+            "year":"1877",
+        },
+        {
+            "uid":"alma-tadema-miss-alice-lewis-1884",
+            "artist":"Lawrence Alma-Tadema",
+            "title":"Miss Alice Lewis",
+            "year":"1884",
+        },
+        {
+            "uid":"alma-tadema-phidias-showing-the-frieze-of-the-parthenon-to-his-friends-1868",
+            "artist":"Lawrence Alma-Tadema",
+            "title":"Phidias Showing the Frieze of the Parthenon to his Friends",
+            "year":"1868",
+        },
+        {
+            "uid":"alma-tadema-spring-flowers",
+            "artist":"Lawrence Alma-Tadema",
+            "title":"Spring Flowers",
+            "year":"1883",
+        },
+        {
+            "uid":"alma-tadema-the-education-of-the-children-of-clovis-1861",
+            "artist":"Lawrence Alma-Tadema",
+            "title":"The Education of the Children of Clovis",
+            "year":"1861",
+        },
+        {
+            "uid":"alma-tadema-the-finding-of-moses-1904",
+            "artist":"Lawrence Alma-Tadema",
+            "title":"The Finding of Moses",
+            "year":"1904",
+        },
+        {
+            "uid":"alma-tadema-unconscious-rivals-1893",
+            "artist":"Lawrence Alma-Tadema",
+            "title":"Unconscious Rivals",
+            "year":"1893",
+        }
+    ]
+}
+

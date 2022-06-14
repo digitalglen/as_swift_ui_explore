@@ -1,0 +1,83 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.brueghel",
+            "productid":"com.digitalglen.cutouts.brueghel",
+            "title":"Brueghel",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"brueghel-haymaking",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Haymaking",
+            "year":"1565",
+        },
+        {
+            "uid":"brueghel-hunters-in-the-snow",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Hunters in the Snow",
+            "year":"1565",
+            "brightness-bottom-center":"light",
+            "brightness-bottom-right":"light",
+        },
+        {
+            "uid":"brueghel-the-wedding-dance",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"The Wedding Dance",
+            "year":"1566",
+        },
+        {
+            "uid":"brueghel-peasant-wedding-1566",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"The Peasant Wedding",
+            "year":"1568",
+        },
+        {
+            "uid":"brueghel-the-adoration-of-the-kings-1564",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"The Adoration of the Kings",
+            "year":"1564",
+        },
+        {
+            "uid":"brueghel-the-beggars-1568",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"The Beggars",
+            "year":"1568",
+        },
+        {
+            "uid":"brueghel-the-country-dance",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"The Country Dance",
+            "year":"1568",
+            "brightness-thumb-bottom-right":"light",
+        },
+        {
+            "uid":"brueghel-netherlandish-proverbs",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs",
+            "year":"1559",
+        },
+        {
+            "uid":"brueghel-the-harvesters",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"The Harvesters",
+            "year":"1565",
+        },
+        {
+            "uid":"brueghel-the-land-of-cockaigne-1567",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"The Land of Cockaigne",
+            "year":"1567",
+        },
+        {
+            "uid":"brueghel-the-blind-leading-the-blind-1568",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"The Blind Leading the Blind",
+            "year":"1568",
+        }
+    ]
+}
+

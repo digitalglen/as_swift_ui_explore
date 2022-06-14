@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.bosch",
+            "productid":"com.digitalglen.cutouts.bosch",
+            "title":"Bosch",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"bosch-adoration-of-the-magi-1475",
+            "artist":"Hieronymus Bosch",
+            "title":"Adoration of the Magi",
+            "year":"1475",
+        },
+        {
+            "uid":"bosch-christ-carrying-the-cross-1480s",
+            "artist":"Hieronymus Bosch",
+            "title":"Christ Carrying the Cross",
+            "year":"1480s",
+        },
+        {
+            "uid":"bosch-christ-carrying-the-cross-1516",
+            "artist":"Hieronymus Bosch",
+            "title":"Christ Carrying the Cross",
+            "year":"1516",
+        },
+        {
+            "uid":"bosch-christ-crowned-with-thorns-1500",
+            "artist":"Hieronymus Bosch",
+            "title":"Christ Crowned with Thorns",
+            "year":"1500",
+        },
+        {
+            "uid":"bosch-Crowned_with_Thorns-date-unknown",
+            "artist":"Hieronymus Bosch",
+            "title":"Crowned with Thorns",
+            "year":"1500",
+        },
+        {
+            "uid":"bosch-cutting-the-stone-1494",
+            "artist":"Hieronymus Bosch",
+            "title":"Cutting the Stone",
+            "year":"1494",
+        },
+        {
+            "uid":"bosch-ecce-homo-1475",
+            "artist":"Hieronymus Bosch",
+            "title":"Ecce Homo",
+            "year":"1475",
+        },
+        {
+            "uid":"bosch-ecce-homo-1490s",
+            "artist":"Hieronymus Bosch",
+            "title":"Ecce Homo",
+            "year":"1490s",
+        },
+        {
+            "uid":"bosch-christ-carrying-the-cross-1480",
+            "artist":"Hieronymus Bosch",
+            "title":"Christ Carrying the Cross",
+            "year":"1480",
+        },
+        {
+            "uid":"bosch-the-conjurer-1502",
+            "artist":"Hieronymus Bosch",
+            "title":"The Conjurer",
+            "year":"1502",
+        },
+        {
+            "uid":"bosch-The-Temptation-of-St-Anthony-1515",
+            "artist":"Hieronymus Bosch",
+            "title":"The Temptation of St. Anthony",
+            "year":"1515",
+        }
+    ]
+}
+

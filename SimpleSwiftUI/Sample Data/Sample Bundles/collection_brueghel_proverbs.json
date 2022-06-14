@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"cutouts.brueghel.proverbs",
+            "productid":"com.digitalglen.cutouts.brueghel.proverbs",
+            "title":"Brueghel Proverbs",
+            "keywords":"masterpiece, art",
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"brueghel-nederlandish-proverbs",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs",
+            "year":"1559",
+        },
+        {
+            "uid":"brueghel-nederlandish-proverbs-1",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs - \"One shears sheep, the other shears pigs\" (One has all the advantages, the other none)",
+            "year":"1559",
+        },
+        {
+            "uid":"brueghel-nederlandish-proverbs-2",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs - \"Feel the hens\" (Count your chickens before they hatch)",
+            "year":"1559",
+        },
+        {
+            "uid":"brueghel-nederlandish-proverbs-3",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs - \"Puts the blue cloak on her husband\" (Cuckolds)",
+            "year":"1559",
+        },
+        {
+            "uid":"brueghel-nederlandish-proverbs-4",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs - \"Hangs the cloak according to the wind\" (Adapts viewpoint to current opinion)",
+            "year":"1559",
+        },
+        {
+            "uid":"brueghel-nederlandish-proverbs-5",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs - \"Can't bear to see the sun shining on the water\" (Jealous of another's success)",
+            "year":"1559",
+        },
+        {
+            "uid":"brueghel-nederlandish-proverbs-6",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs - \"One winds on the distaff what the other spins\" (Spreads gossip)",
+            "year":"1559",
+        },
+        {
+            "uid":"brueghel-nederlandish-proverbs-7",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs - \"Bang your head against a brick wall\" (Attempt the impossible)",
+            "year":"1559",
+        },
+        {
+            "uid":"brueghel-nederlandish-proverbs-8",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs - \"Hold an eel by the tail\" (Undertake a difficult task. Today: 'catch a tiger by the tail')",
+            "year":"1559",
+        },
+        {
+            "uid":"brueghel-nederlandish-proverbs-9",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs - \"To fall from the ox onto the rear end of an ass\" (To fall on hard times)",
+            "year":"1559",
+        },
+        {
+            "uid":"brueghel-nederlandish-proverbs-10",
+            "artist":"Pieter Brueghel the Elder",
+            "title":"Netherlandish Proverbs - \"To lead each other by the nose\" (To fool each other)",
+            "year":"1559",
+        }
+    ]
+}
+

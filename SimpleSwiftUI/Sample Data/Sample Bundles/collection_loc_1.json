@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"library-of-congress-1",
+            "productid":"com.digitalglen.cutouts.loc.1",
+            "title":"Library of Congress I",
+            "keywords":"masterpiece, art"
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"loc-bill-stagg-homesteader-pie-town-nm",
+            "artist":"Library of Congress",
+            "title":"Bill Stagg, Homesteader, Pie Town, New Mexico",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-boy-near-cincinnati-ohio",
+            "artist":"Library of Congress",
+            "title":"Boy near Cincinnati, Ohio",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-commuters-lowell-mass",
+            "artist":"Library of Congress",
+            "title":"Commuters, Lowell, Massachusetts",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-eagle-fruit-store-and-capital-hotel-lincoln-nebraska",
+            "artist":"Library of Congress",
+            "title":"Eagle Fruit Store and Capital Hotel, Lincoln, Nebraska",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-farm-auction-derby-conn",
+            "artist":"Library of Congress",
+            "title":"Farm Auction, Derby, Connecticut",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-jack-whinery-homesteader-and-family-pie-town-nm",
+            "artist":"Library of Congress",
+            "title":"Jack Whinery, Homesteader, and Family, Pie Town, New Mexico",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-main-street-cascade-idaho",
+            "artist":"Library of Congress",
+            "title":"Main Street, Cascade, Idaho",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-saying-grace-before-the-barbeque-dinner-at-the-pie-town-nm-fair",
+            "artist":"Library of Congress",
+            "title":"Saying Grace Before the Barbeque Dinner at the Fair, Pie Town, New Mexico",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-second-hand-plumbing-store-brockton-mass",
+            "artist":"Library of Congress",
+            "title":"Second-Hand Plumbing Store, Brockton, Massachusetts",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-welders",
+            "artist":"Library of Congress",
+            "title":"Welders Making Boilers for a Ship, Chattanooga, Tennessee",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-wisdom-montana",
+            "artist":"Library of Congress",
+            "title":"Wisdom, Montana",
+            "year":"1942",
+        }
+    ]
+}
+

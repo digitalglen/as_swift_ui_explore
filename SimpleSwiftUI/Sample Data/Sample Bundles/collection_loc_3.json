@@ -1,0 +1,80 @@
+{
+    "bundle": [
+        {
+            "uid":"library-of-congress-3",
+            "productid":"com.digitalglen.cutouts.loc.3",
+            "title":"Library of Congress III",
+            "keywords":"masterpiece, art"
+        },
+    ],
+    
+    "artworks": [
+        {
+            "uid":"loc-boys-on-truck-robstown-texas",
+            "artist":"Library of Congress",
+            "title":"Boys on Truck, Robstown, Texas",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-children-adult-tenement-district-brockton-mass",
+            "artist":"Library of Congress",
+            "title":"Children with Adult, Tenement District, Brockton, Massachusetts",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-garage-mechanic-newark-nj",
+            "artist":"Library of Congress",
+            "title":"Garage Mechanic, Newark, New Jersey",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-jim-morris-and-wife-homesteaders-pie-town-nm",
+            "artist":"Library of Congress",
+            "title":"Jim Morris and Wife, Homesteaders, Pie Town, New Mexico",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-llano-de-san-juan-new-mexico-catholic-church",
+            "artist":"Library of Congress",
+            "title":"Catholic Church, Llano de San Juan, New Mexico",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-natchez-miss",
+            "artist":"Library of Congress",
+            "title":"Natchez, Mississippi",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-school-children-singing-pie-town-nm",
+            "artist":"Library of Congress",
+            "title":"School Children Singing, Pie Town, New Mexico",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-seed-and-feed-store-lincoln-nebraska",
+            "artist":"Library of Congress",
+            "title":"Seed and Feed Store, Lincoln, Nebraska",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-street-corner-dillon-montana",
+            "artist":"Library of Congress",
+            "title":"Street Corner, Dillon, Montana",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-sugar-cane-workers-resting-puerto-rico",
+            "artist":"Library of Congress",
+            "title":"Sugar Cane Workers Resting, Puerto Rico",
+            "year":"1942",
+        },
+        {
+            "uid":"loc-vermont-state-fair",
+            "artist":"Library of Congress",
+            "title":"Vermont State Fair",
+            "year":"1942",
+        }
+    ]
+}
+
