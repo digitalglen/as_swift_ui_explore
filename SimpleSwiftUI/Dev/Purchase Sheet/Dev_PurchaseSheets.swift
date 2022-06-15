@@ -55,7 +55,7 @@ fileprivate struct PurchaseSheetDesignTile: View {
                     .foregroundColor(.secondary)
             }
         }
-        .foregroundColor(.white)
+        .foregroundColor(.primary)
         .aspectRatio(1.0, contentMode: .fill)
 //        .frame(width: 250, height: 250)
         .onTapGesture {

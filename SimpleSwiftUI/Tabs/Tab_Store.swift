@@ -8,7 +8,8 @@ struct Tab_Store: View {
                 Text("Store")
                     .font(.largeTitle)
                 ScrollView {
-                    BundlesGrid(SampleData.bundles, showAsPurchased: false) { bundle in
+                    BundlesGrid(models: BundlesGridDataModel(SampleData.bundles).bundles,
+                                showAsPurchased: true) { bundle in
                         withAnimation {
                             state.purchaseSheetBundle = bundle
                             state.purchaseSheetIsVisible = true
@@ -20,7 +21,7 @@ struct Tab_Store: View {
             PurchaseSheet(state: state)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .foregroundColor(.white)
+        .foregroundColor(.primary)
         .preferredColorScheme(.dark)
     }
 }

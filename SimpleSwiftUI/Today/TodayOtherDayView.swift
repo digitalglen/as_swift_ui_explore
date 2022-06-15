@@ -59,7 +59,7 @@ struct StarsView: View {
             .padding(.vertical, 6)
         }
         .background(backgroundColor)
-        .foregroundColor(.white)
+        .foregroundColor(.primary)
     }
 }
 
@@ -68,22 +68,28 @@ struct TodayOtherDayView_Previews: PreviewProvider {
         TodayOtherDayView(daysPast: 1, imageName: SampleViews.placeholderImageName, starCount: 2)
             .previewLayout(.fixed(width: 600, height: 500))
             .preferredColorScheme(.dark)
+            .previewDisplayName("Today - Past Day")
             .padding(20)
 
         StarsView(starCount: 0)
             .previewLayout(.fixed(width: 150, height: 20))
             .preferredColorScheme(.dark)
+            .previewDisplayName("No stars")
         StarsView(starCount: 1)
             .previewLayout(.fixed(width: 150, height: 20))
             .preferredColorScheme(.dark)
+            .previewDisplayName("1 star")
         StarsView(starCount: 2)
             .previewLayout(.fixed(width: 150, height: 20))
             .preferredColorScheme(.dark)
+            .previewDisplayName("2 stars")
         StarsView(starCount: 3)
             .previewLayout(.fixed(width: 150, height: 20))
             .preferredColorScheme(.dark)
+            .previewDisplayName("3 stars")
         StarsView(starCount: 4)
             .previewLayout(.fixed(width: 150, height: 20))
             .preferredColorScheme(.dark)
+            .previewDisplayName("4 stars")
     }
 }

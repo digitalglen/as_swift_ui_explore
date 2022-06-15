@@ -8,16 +8,16 @@ struct BundlesGrid: View {
     var gridHSpacing: Double {return 80}
     var gridVSpacing: Double {return 10}
         
-    init(_ models: [ArtworksGridDataModel], showAsPurchased: Bool, onTap: ((SampleBundle) -> Void)? = nil) {
-        self.models = models
-        self.showAsPurchased = showAsPurchased
-        self.onTap = onTap
-    }
-    init(_ bundles: [SampleBundle], showAsPurchased: Bool, onTap: ((SampleBundle) -> Void)? = nil) {
-        self.models = BundlesGridDataModel(bundles).bundles
-        self.showAsPurchased = showAsPurchased
-        self.onTap = onTap
-    }
+//    init(_ models: [ArtworksGridDataModel], showAsPurchased: Bool, onTap: ((SampleBundle) -> Void)? = nil) {
+//        self.models = models
+//        self.showAsPurchased = showAsPurchased
+//        self.onTap = onTap
+//    }
+//    init(_ bundles: [SampleBundle], showAsPurchased: Bool, onTap: ((SampleBundle) -> Void)? = nil) {
+//        self.models = BundlesGridDataModel(bundles).bundles
+//        self.showAsPurchased = showAsPurchased
+//        self.onTap = onTap
+//    }
     
     var body: some View {
         let bundleColumns = Array(repeating: GridItem(.flexible(), spacing: gridHSpacing, alignment: .center), count: 4)
@@ -27,7 +27,7 @@ struct BundlesGrid: View {
                     Spacer(minLength: 20)
                     LazyVGrid(columns: bundleColumns, spacing: gridVSpacing) {
                         ForEach(models, id: \.self) { model in
-                            ArtworksGrid(model, showAsPurchased: showAsPurchased)
+                            ArtworksGrid(model: model, showAsPurchased: showAsPurchased)
                             .onTapGesture {
                                 onTap?(SampleData.sampleBundle)
                             }
@@ -44,7 +44,8 @@ struct BundlesGrid: View {
 
 struct BundlesGrid_Previews: PreviewProvider {
     static var previews: some View {
-        BundlesGrid(SampleData.bundles, showAsPurchased: false)
+        let models = BundlesGridDataModel(SampleData.bundles).bundles
+        BundlesGrid(models: models, showAsPurchased: false, onTap: nil)
             .preferredColorScheme(.dark)
     }
 }

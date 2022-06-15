@@ -7,7 +7,7 @@ struct Tab_Dev: View {
                 List {
                     NavigationLink("Purchase Sheets", destination: Dev_PurchaseSheets())
                 }
-                .foregroundColor(.white)
+                .foregroundColor(.primary)
                 .navigationTitle("Development")
             }
         }

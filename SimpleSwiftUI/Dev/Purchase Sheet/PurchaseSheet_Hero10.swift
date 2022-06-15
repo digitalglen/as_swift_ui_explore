@@ -45,7 +45,7 @@ struct PurchaseSheet_Hero10: View, PurchaseSheetDesign {
                             Gradient.Stop(color: .blue.opacity(1.0), location: 0.5),
                         ], startPoint: .bottom, endPoint: .top)
                     }
-                    .foregroundColor(.white)
+                    .foregroundColor(.primary)
                     .cornerRadius(8)
                     .buttonStyle(.bordered)
                 }

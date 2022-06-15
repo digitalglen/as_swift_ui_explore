@@ -6,7 +6,7 @@ struct Tab_Today: View {
             Today()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .foregroundColor(.white)
+        .foregroundColor(.primary)
         .preferredColorScheme(.dark)
     }
 }

@@ -3,10 +3,18 @@ import SwiftUI
 struct BundleViewer: View {
     let bundle: SampleBundle
     var body: some View {
-        VStack {
-                ArtworksGrid(ArtworksGridDataModel(bundle), showAsPurchased: true)
+        ZStack(alignment: .top) {
+            ArtworksGrid(model: ArtworksGridDataModel(bundle), showAsPurchased: true)
+
+            VStack {
+                Text("HELLO")
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 150)
+                    .background(.black.opacity(0.75))
+            }
         }
         .navigationBarTitle(bundle.title)
+        .background(ignoresSafeAreaEdges: [.horizontal])
     }
 }
 

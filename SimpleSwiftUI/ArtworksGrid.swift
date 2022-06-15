@@ -4,15 +4,6 @@ struct ArtworksGrid: View {
     let model: ArtworksGridDataModel
     let showAsPurchased: Bool
     
-    init(_ model: ArtworksGridDataModel, showAsPurchased: Bool) {
-        self.model = model
-        self.showAsPurchased = showAsPurchased
-    }
-    init(_ bundle: SampleBundle, showAsPurchased: Bool) {
-        self.model = ArtworksGridDataModel(bundle)
-        self.showAsPurchased = showAsPurchased
-    }
-
     let cellSpacing: Double = 2
     var columns: [GridItem] { Array(repeating: GridItem(.flexible(), spacing: cellSpacing, alignment: .center), count: 3) }
     var body: some View {
@@ -28,9 +19,12 @@ struct ArtworksGrid: View {
             }
             .frame(maxWidth: .infinity)
             .font( .body)
-//            .background(.black)
             .cornerRadius(8)
-
+            .safeAreaInset(edge: .bottom, alignment: .center, spacing: 0) {
+                Color.clear
+                    .frame(height: 60)
+                    .background(Material.bar)
+            }
             HStack {
                 VStack {
                     Text(model.title)
@@ -40,18 +34,15 @@ struct ArtworksGrid: View {
                         .opacity( showAsPurchased ? 0 : 1)
                 }
             }
-//            .background(.orange)
         }
-//        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
 struct ArtworksGrid_Previews: PreviewProvider {
     static var previews: some View {
-        ArtworksGrid(SampleData.sampleBundle, showAsPurchased: false)
+        let model = ArtworksGridDataModel(SampleData.sampleBundle)
+        ArtworksGrid(model: model, showAsPurchased: false)
             .previewLayout(.fixed(width: 250, height: 340))
-//            .previewLayout(.sizeThatFits)
-//            .background(.blue)
             .padding([.all], 20)
             .preferredColorScheme(.dark)
     }
