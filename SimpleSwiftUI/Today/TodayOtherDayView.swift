@@ -14,8 +14,7 @@ struct TodayOtherDayView: View {
         VStack {
             ZStack(alignment: .bottom) {
                 SampleViews.image(for: imageName)
-                    .resizable()
-                    .aspectRatio(1.0, contentMode: .fit)
+                    .square()
                 VStack {
                     StarsView(starCount: starCount)
                 }

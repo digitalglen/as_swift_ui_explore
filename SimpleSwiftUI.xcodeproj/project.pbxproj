@@ -619,6 +619,8 @@
 		42F3B4FB285A541200330BAA /* TodayBeforeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B4FA285A541200330BAA /* TodayBeforeView.swift */; };
 		42F3B4FD285A605D00330BAA /* View Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B4FC285A605D00330BAA /* View Modifiers.swift */; };
 		42F3B500285A6DAE00330BAA /* BundleViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B4FF285A6DAE00330BAA /* BundleViewer.swift */; };
+		42F3B502285A96A700330BAA /* View Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B501285A96A700330BAA /* View Helpers.swift */; };
+		42F3B504285A9A0900330BAA /* Image Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B503285A9A0900330BAA /* Image Modifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1235,6 +1237,8 @@
 		42F3B4FA285A541200330BAA /* TodayBeforeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayBeforeView.swift; sourceTree = "<group>"; };
 		42F3B4FC285A605D00330BAA /* View Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Modifiers.swift"; sourceTree = "<group>"; };
 		42F3B4FF285A6DAE00330BAA /* BundleViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleViewer.swift; sourceTree = "<group>"; };
+		42F3B501285A96A700330BAA /* View Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Helpers.swift"; sourceTree = "<group>"; };
+		42F3B503285A9A0900330BAA /* Image Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Modifiers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2099,7 +2103,9 @@
 				428F68FF2856323D0012CDE8 /* SimpleSwiftUIApp.swift */,
 				428F69012856323D0012CDE8 /* ContentView.swift */,
 				42F3B4F6285A4CE100330BAA /* View Models.swift */,
+				42F3B501285A96A700330BAA /* View Helpers.swift */,
 				42F3B4FC285A605D00330BAA /* View Modifiers.swift */,
+				42F3B503285A9A0900330BAA /* Image Modifiers.swift */,
 				428B003E28576DE000DFCB6A /* Tabs */,
 				428B004128576FB600DFCB6A /* Today */,
 				428B00332856956800DFCB6A /* BundlesGrid.swift */,
@@ -2790,6 +2796,7 @@
 				428F69022856323D0012CDE8 /* ContentView.swift in Sources */,
 				428B00472857724B00DFCB6A /* Environments.swift in Sources */,
 				428B005528580AB600DFCB6A /* Dev_PurchaseSheets.swift in Sources */,
+				42F3B504285A9A0900330BAA /* Image Modifiers.swift in Sources */,
 				428B003B2856D1DE00DFCB6A /* UIImage+Helpers.swift in Sources */,
 				428F691C28566A290012CDE8 /* Tab_Settings.swift in Sources */,
 				428B00452857713A00DFCB6A /* Tab_Dev.swift in Sources */,
@@ -2808,6 +2815,7 @@
 				42F3B4F3285A196F00330BAA /* SampleViews.swift in Sources */,
 				42F3B4FD285A605D00330BAA /* View Modifiers.swift in Sources */,
 				428B004A2857894E00DFCB6A /* PurchaseSheet_Grid_3x4.swift in Sources */,
+				42F3B502285A96A700330BAA /* View Helpers.swift in Sources */,
 				428B004C28578B5000DFCB6A /* PurchaseSheet_Hero10.swift in Sources */,
 				428F6918285637A80012CDE8 /* Tab_Library.swift in Sources */,
 				428B008C2858224800DFCB6A /* SampleJSON.swift in Sources */,

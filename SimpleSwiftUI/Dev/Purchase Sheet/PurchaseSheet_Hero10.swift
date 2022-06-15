@@ -107,7 +107,6 @@ struct PurchaseSheet_Hero10: View, PurchaseSheetDesign {
                 imageCell(artworks[9])
             }
         }
-//        .aspectRatio(1.0, contentMode: .fit)
         .background(.black)
         .foregroundColor(.gray)
         .frame(maxWidth: width, maxHeight: width)
@@ -145,8 +144,7 @@ struct PurchaseSheet_Hero10: View, PurchaseSheetDesign {
         HStack {
             if let image = artwork?.imageLarge {
                     image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+                        .square()
                         .background(.white.opacity(0.3))
             }
         }
@@ -156,13 +154,12 @@ struct PurchaseSheet_Hero10: View, PurchaseSheetDesign {
     }
     func imageCell(_ artwork: SampleArtwork) -> some View {
         artwork.imageSquare
-        .resizable()
-        .aspectRatio(1.0, contentMode: .fit)
-        .background(.white.opacity(0.2))
-        .opacity(selectedArtwork == nil || selectedArtwork == artwork ? 1.0 : 0.5)
-        .onTapGesture {
-            selectedArtwork = artwork
-        }
+            .square()
+            .background(.white.opacity(0.2))
+            .opacity(selectedArtwork == nil || selectedArtwork == artwork ? 1.0 : 0.5)
+            .onTapGesture {
+                selectedArtwork = artwork
+            }
     }
     
     var heroThumbnailCell: some View {

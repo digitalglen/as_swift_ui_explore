@@ -12,19 +12,18 @@ struct ArtworksGrid: View {
                 ForEach(model.artworks, id: \.self) { model in
                     ZStack(alignment: .top) {
                         SampleViews.image(for: model.imageName)
-                            .resizable()
-                            .aspectRatio(1.0, contentMode: .fit)
+                            .square()
                     }
                 }
             }
             .frame(maxWidth: .infinity)
             .font( .body)
             .cornerRadius(8)
-            .safeAreaInset(edge: .bottom, alignment: .center, spacing: 0) {
-                Color.clear
-                    .frame(height: 60)
-                    .background(Material.bar)
-            }
+//            .safeAreaInset(edge: .bottom, alignment: .center, spacing: 0) {
+//                Color.clear
+//                    .frame(height: 60)
+//                    .background(Material.bar)
+//            }
             HStack {
                 VStack {
                     Text(model.title)
@@ -42,7 +41,7 @@ struct ArtworksGrid_Previews: PreviewProvider {
     static var previews: some View {
         let model = ArtworksGridDataModel(SampleData.sampleBundle)
         ArtworksGrid(model: model, showAsPurchased: false)
-            .previewLayout(.fixed(width: 250, height: 340))
+            .previewLayout(.fixed(width: 250, height: 500))
             .padding([.all], 20)
             .preferredColorScheme(.dark)
     }
