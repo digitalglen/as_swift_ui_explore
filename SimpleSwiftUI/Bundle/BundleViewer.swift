@@ -4,7 +4,7 @@ struct BundleViewer: View {
     let bundle: SampleBundle
     var body: some View {
         ZStack(alignment: .top) {
-            ArtworksGrid(model: ArtworksGridDataModel(bundle), showAsPurchased: true)
+            ArtworksGrid(model: ArtworksGridViewModel(bundle), showAsPurchased: true)
 
             VStack {
                 Text("HELLO")

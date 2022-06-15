@@ -9,7 +9,7 @@ struct Tab_Library: View {
         NavigationView {
             ZStack {
                 ScrollView {
-                    BundlesGrid(models: BundlesGridDataModel(SampleData.purchasedBundles).bundles,
+                    BundlesGrid(models: BundlesGridViewModel(SampleData.purchasedBundles).bundles,
                                 showAsPurchased: true) { bundle in
                         self.bundle = bundle
                         self.goToBundle.toggle()

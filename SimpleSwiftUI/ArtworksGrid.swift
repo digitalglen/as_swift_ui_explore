@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ArtworksGrid: View {
-    let model: ArtworksGridDataModel
+    let model: ArtworksGridViewModel
     let showAsPurchased: Bool
     
     let cellSpacing: Double = 2
@@ -39,7 +39,7 @@ struct ArtworksGrid: View {
 
 struct ArtworksGrid_Previews: PreviewProvider {
     static var previews: some View {
-        let model = ArtworksGridDataModel(SampleData.sampleBundle)
+        let model = ArtworksGridViewModel(SampleData.sampleBundle)
         ArtworksGrid(model: model, showAsPurchased: false)
             .previewLayout(.fixed(width: 250, height: 500))
             .padding([.all], 20)

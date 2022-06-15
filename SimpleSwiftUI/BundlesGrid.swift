@@ -1,20 +1,20 @@
 import SwiftUI
 
 struct BundlesGrid: View {
-    let models: [ArtworksGridDataModel]
+    let models: [ArtworksGridViewModel]
     let showAsPurchased: Bool
     let onTap: ((_ bundle: SampleBundle) -> Void)?
 
     var gridHSpacing: Double {return 80}
     var gridVSpacing: Double {return 10}
         
-//    init(_ models: [ArtworksGridDataModel], showAsPurchased: Bool, onTap: ((SampleBundle) -> Void)? = nil) {
+//    init(_ models: [ArtworksGridViewModel], showAsPurchased: Bool, onTap: ((SampleBundle) -> Void)? = nil) {
 //        self.models = models
 //        self.showAsPurchased = showAsPurchased
 //        self.onTap = onTap
 //    }
 //    init(_ bundles: [SampleBundle], showAsPurchased: Bool, onTap: ((SampleBundle) -> Void)? = nil) {
-//        self.models = BundlesGridDataModel(bundles).bundles
+//        self.models = BundlesGridViewModel(bundles).bundles
 //        self.showAsPurchased = showAsPurchased
 //        self.onTap = onTap
 //    }
@@ -44,7 +44,7 @@ struct BundlesGrid: View {
 
 struct BundlesGrid_Previews: PreviewProvider {
     static var previews: some View {
-        let models = BundlesGridDataModel(SampleData.bundles).bundles
+        let models = BundlesGridViewModel(SampleData.bundles).bundles
         BundlesGrid(models: models, showAsPurchased: false, onTap: nil)
             .preferredColorScheme(.dark)
     }

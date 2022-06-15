@@ -8,7 +8,7 @@ struct Tab_Store: View {
                 Text("Store")
                     .font(.largeTitle)
                 ScrollView {
-                    BundlesGrid(models: BundlesGridDataModel(SampleData.bundles).bundles,
+                    BundlesGrid(models: BundlesGridViewModel(SampleData.bundles).bundles,
                                 showAsPurchased: true) { bundle in
                         withAnimation {
                             state.purchaseSheetBundle = bundle

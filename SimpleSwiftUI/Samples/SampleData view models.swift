@@ -18,7 +18,7 @@ struct ArtworkDataModel: Hashable {
     }
 }
 
-struct ArtworksGridDataModel: Hashable {
+struct ArtworksGridViewModel: Hashable {
     let title: String
     let price: String
     let artworks: [ArtworkDataModel]
@@ -36,13 +36,13 @@ struct ArtworksGridDataModel: Hashable {
 }
 
 
-struct BundlesGridDataModel: Hashable {
-    let bundles: [ArtworksGridDataModel]
+struct BundlesGridViewModel: Hashable {
+    let bundles: [ArtworksGridViewModel]
 
-    init(bundles: [ArtworksGridDataModel] = []) {
+    init(bundles: [ArtworksGridViewModel] = []) {
         self.bundles = bundles
     }
     init(_ bundles: [SampleBundle]) {
-        self.bundles = bundles.map {ArtworksGridDataModel($0)}
+        self.bundles = bundles.map {ArtworksGridViewModel($0)}
     }
 }
