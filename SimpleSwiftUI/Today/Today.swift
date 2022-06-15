@@ -24,49 +24,13 @@ struct Today: View {
         HStack {
             Spacer()
             VStack {
-//                ViewSegments(settings: settings)
-//                    .frame(width: nil, height: 60.0, alignment: .center)
-                HStack {
-//                    Spacer(minLength: 25)
-                    TodayPane(settings: settings)
-//                    Spacer(minLength: 25)
-                }
-                Spacer(minLength: 30)
+                TodayPane(settings: settings)
                 TodayBeforeView()
-                Spacer(minLength: 50)
             }
             .frame(width: 850.0)
             Spacer()
         }
         .background(bgColor)
-    }
-}
-
-
-struct ViewSegments: View {
-    @ObservedObject var settings: TodaySettings
-
-    init(settings: TodaySettings) {
-        self.settings = settings
-        UISegmentedControl.appearance().selectedSegmentTintColor = .white
-        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.black], for: .selected)
-        UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .normal)
-    }
-    
-    var body: some View {
-        Spacer(minLength: 200)
-        HStack {
-            Picker("Difficulty", selection: $settings.viewKind) {
-                Text("Today").tag(TodaySettings.ViewKind.today)
-                Text("Store").tag(TodaySettings.ViewKind.store)
-                Text("Library").tag(TodaySettings.ViewKind.library)
-            }
-            .pickerStyle(SegmentedPickerStyle())
-            .foregroundColor(.white)
-//            .background(.white.opacity(0.2))
-            .frame(width: 400.0, height: nil, alignment: .center)
-        }
-        .background(.clear)
     }
 }
 

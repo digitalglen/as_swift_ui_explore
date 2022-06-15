@@ -3,17 +3,19 @@ import SwiftUI
 struct Tab_Store: View {
     @ObservedObject var state: StoreState = StoreState()
     var body: some View {
-        VStack {
-            Text("Store")
-                .font(.largeTitle)
-            ScrollView {
-                BundlesGrid(SampleData.bundles, showAsPurchased: false) { bundle in
-                    withAnimation {
-                        state.purchaseSheetBundle = bundle
-                        state.purchaseSheetIsVisible = true
+        ZStack {
+            VStack {
+                Text("Store")
+                    .font(.largeTitle)
+                ScrollView {
+                    BundlesGrid(SampleData.bundles, showAsPurchased: false) { bundle in
+                        withAnimation {
+                            state.purchaseSheetBundle = bundle
+                            state.purchaseSheetIsVisible = true
+                        }
                     }
+                    .padding(4)
                 }
-                .padding(4)
             }
             PurchaseSheet(state: state)
         }
