@@ -618,6 +618,7 @@
 		42F3B4F9285A4E3700330BAA /* TodayOtherDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B4F8285A4E3700330BAA /* TodayOtherDayView.swift */; };
 		42F3B4FB285A541200330BAA /* TodayBeforeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B4FA285A541200330BAA /* TodayBeforeView.swift */; };
 		42F3B4FD285A605D00330BAA /* View Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B4FC285A605D00330BAA /* View Modifiers.swift */; };
+		42F3B500285A6DAE00330BAA /* BundleViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B4FF285A6DAE00330BAA /* BundleViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1233,6 +1234,7 @@
 		42F3B4F8285A4E3700330BAA /* TodayOtherDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayOtherDayView.swift; sourceTree = "<group>"; };
 		42F3B4FA285A541200330BAA /* TodayBeforeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayBeforeView.swift; sourceTree = "<group>"; };
 		42F3B4FC285A605D00330BAA /* View Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Modifiers.swift"; sourceTree = "<group>"; };
+		42F3B4FF285A6DAE00330BAA /* BundleViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleViewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2102,6 +2104,7 @@
 				428B004128576FB600DFCB6A /* Today */,
 				428B00332856956800DFCB6A /* BundlesGrid.swift */,
 				42F3B4F0285A167C00330BAA /* ArtworksGrid.swift */,
+				42F3B4FE285A6D8B00330BAA /* Bundle */,
 				428B005328580A5F00DFCB6A /* Purchase Sheet */,
 				428B00352856B1AA00DFCB6A /* Colors.swift */,
 				428B005A2858189D00DFCB6A /* Samples */,
@@ -2119,6 +2122,14 @@
 				428F69062856323D0012CDE8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		42F3B4FE285A6D8B00330BAA /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				42F3B4FF285A6DAE00330BAA /* BundleViewer.swift */,
+			);
+			path = Bundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2785,6 +2796,7 @@
 				428B00382856D12200DFCB6A /* Today.swift in Sources */,
 				428B004F2857BFFE00DFCB6A /* PurchaseSheetStyles.swift in Sources */,
 				428B003D2856D2BF00DFCB6A /* CGGeometry+Helpers.swift in Sources */,
+				42F3B500285A6DAE00330BAA /* BundleViewer.swift in Sources */,
 				42F3B4F9285A4E3700330BAA /* TodayOtherDayView.swift in Sources */,
 				428F691A285637B50012CDE8 /* Tab_Store.swift in Sources */,
 				428B005728580DBC00DFCB6A /* PurchaseSheet_Grid_TopHero.swift in Sources */,

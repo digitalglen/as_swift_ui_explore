@@ -3,17 +3,14 @@ import UIKit
 import SwiftUI
 
 class TodaySettings: ObservableObject {
-    enum ViewKind: Int {case today, store, library}
     enum Today: Int {case mon, tue, wed, thu, fri, sat, sun}
     @Published var today: Today
-    @Published var viewKind: ViewKind
     static var standard: TodaySettings {
-        TodaySettings(today: .mon, viewKind: .today)
+        TodaySettings(today: .mon)
     }
     
-    init(today: Today, viewKind: ViewKind) {
+    init(today: Today) {
         self.today = today
-        self.viewKind = viewKind
     }
 }
 
