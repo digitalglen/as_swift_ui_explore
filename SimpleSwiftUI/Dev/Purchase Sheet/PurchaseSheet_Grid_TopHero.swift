@@ -156,7 +156,7 @@ struct PurchaseSheet_Grid_TopHero: View, PurchaseSheetDesign {
         let image = artworkForIndex(0)?.imageSquare ?? Image("circle.fill")
         return image
             .resizable()
-            .aspectRatio(1.0, contentMode: .fit)
+            .aspectRatio(contentMode: .fit)
             .frame(width: thumbnailHeroCellSize.width, height: thumbnailHeroCellSize.height)
             .background(.white.opacity(0.3))
     }

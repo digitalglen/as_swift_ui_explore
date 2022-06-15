@@ -1,10 +1,6 @@
 import Foundation
 
 struct SampleJson {
-//    func loadBundle() -> JsonBundle? {
-//        loadJson(filename: "collection_masterpieces_2")
-//    }
-
     struct JsonArtworkData: Decodable {
         var bundle: [JsonBundle]
         var artworks: [JsonArtwork]

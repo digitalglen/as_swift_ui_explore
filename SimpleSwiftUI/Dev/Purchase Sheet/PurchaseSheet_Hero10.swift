@@ -76,9 +76,9 @@ struct PurchaseSheet_Hero10: View, PurchaseSheetDesign {
 
     var gridSpacing: Double {4.0}
 
-    var thumbnailCellsWide: Double {5.0}
-    var thumbnailCellsTall: Double {5.0}
-    var thumbnailSpacing: Double {2.0}
+    var thumbnailCellsWide: Double {return 5.0}
+    var thumbnailCellsTall: Double {return 5.0}
+    var thumbnailSpacing: Double {return 2.0}
     var thumbnailSize: CGSize { CGSize(width: 128, height: 128) }
     var thumbnailHeroCellSize: CGSize {
         CGSize(width: thumbnailCellSize.width * 4 + (3 * thumbnailSpacing),

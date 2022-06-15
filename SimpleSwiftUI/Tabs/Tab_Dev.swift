@@ -1,8 +1,6 @@
 import SwiftUI
 
 struct Tab_Dev: View {
-    @ObservedObject var state: StoreState = StoreState()
-    
     var body: some View {
         NavigationView {
             VStack {
