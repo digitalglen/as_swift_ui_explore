@@ -144,7 +144,7 @@ struct PurchaseSheet_Hero10: View, PurchaseSheetDesign {
         HStack {
             if let image = artwork?.imageLarge {
                     image
-                        .square()
+                        .squared()
                         .background(.white.opacity(0.3))
             }
         }
@@ -154,7 +154,7 @@ struct PurchaseSheet_Hero10: View, PurchaseSheetDesign {
     }
     func imageCell(_ artwork: SampleArtwork) -> some View {
         artwork.imageSquare
-            .square()
+            .squared()
             .background(.white.opacity(0.2))
             .opacity(selectedArtwork == nil || selectedArtwork == artwork ? 1.0 : 0.5)
             .onTapGesture {

@@ -14,7 +14,7 @@ struct TodayOtherDayView: View {
         VStack {
             ZStack(alignment: .bottom) {
                 SampleViews.image(for: imageName)
-                    .square()
+                    .squared()
                 VStack {
                     StarsView(starCount: starCount)
                 }

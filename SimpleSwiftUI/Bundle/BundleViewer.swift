@@ -10,7 +10,8 @@ struct BundleViewer: View {
                 Text("HELLO")
                     .frame(maxWidth: .infinity)
                     .frame(height: 150)
-                    .background(.black.opacity(0.75))
+                    .background(Material.bar)
+//                    .background(.black.opacity(0.75))
             }
         }
         .navigationBarTitle(bundle.title)

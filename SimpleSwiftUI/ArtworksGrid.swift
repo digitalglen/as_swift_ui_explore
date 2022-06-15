@@ -12,18 +12,13 @@ struct ArtworksGrid: View {
                 ForEach(model.artworks, id: \.self) { model in
                     ZStack(alignment: .top) {
                         SampleViews.image(for: model.imageName)
-                            .square()
+                            .squared()
                     }
                 }
             }
             .frame(maxWidth: .infinity)
             .font( .body)
             .cornerRadius(8)
-//            .safeAreaInset(edge: .bottom, alignment: .center, spacing: 0) {
-//                Color.clear
-//                    .frame(height: 60)
-//                    .background(Material.bar)
-//            }
             HStack {
                 VStack {
                     Text(model.title)

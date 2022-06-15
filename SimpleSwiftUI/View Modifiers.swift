@@ -5,7 +5,7 @@ extension View {
         clipShape( RoundedCorner(radius: radius, corners: corners) )
     }
     
-    func square() -> some View {
+    func squared() -> some View {
         modifier(SquareViewModifier())
     }
 }
