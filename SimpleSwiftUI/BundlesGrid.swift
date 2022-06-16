@@ -21,7 +21,6 @@ struct BundlesGrid: View {
                     }
                     Spacer(minLength: 20)
                 }
-                .foregroundColor(.gray)
             }
             .padding(20)
         }

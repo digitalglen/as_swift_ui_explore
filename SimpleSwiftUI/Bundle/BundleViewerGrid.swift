@@ -3,7 +3,7 @@ import SwiftUI
 struct BundleViewerGrid: View {
     let model: ArtworksGridViewModel
     let showAsPurchased: Bool
-    let onTap: ((_ artwork: SampleArtwork) -> Void)?
+    let onTap: ((_ artworkID: SampleArtwork.ID) -> Void)?
     
     let cellSpacing: Double = 2
     var columns: [GridItem] { Array(repeating: GridItem(.flexible(), spacing: cellSpacing, alignment: .center), count: 3) }
@@ -15,7 +15,7 @@ struct BundleViewerGrid: View {
                         SampleViews.image(for: model.imageName)
                             .squared()
                             .onTapGesture {
-                                onTap?(SampleData.sampleArtwork)
+                                onTap?(model.id)
                             }
                     }
                 }

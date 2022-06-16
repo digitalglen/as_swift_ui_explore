@@ -16,6 +16,16 @@ struct SampleData {
         sampleBundle.artworks.first!
     }
     
+    static func sampleArtwork(id: SampleArtwork.ID) -> SampleArtwork? {
+        var match: SampleArtwork? = nil
+        sampleBundles.forEach {
+            if let artwork = $0.artworks.filter({$0.id == id}).first {
+                match = artwork
+            }
+        }
+        return match
+    }
+    
     static var sampleBundle: SampleBundle {
         sampleBundles.last!
     }
@@ -24,9 +34,9 @@ struct SampleData {
         if let jsonBundle = SampleJson().loadJson(filename: filename), let jsonArtworks = jsonBundle.artworks {
             let artworks = jsonArtworks.map {SampleArtwork(jsonArtwork: $0)}
 //            print(artworks)
-            return SampleBundle(title: jsonBundle.title, artworks: artworks)
+            return SampleBundle(id: jsonBundle.uid, title: jsonBundle.title, artworks: artworks)
         } else {
-            return SampleBundle(title: "Invalid Bundle", artworks: [])
+            return SampleBundle(id: UUID().uuidString, title: "Invalid Bundle", artworks: [])
         }
     }
     

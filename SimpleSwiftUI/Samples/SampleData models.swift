@@ -1,6 +1,8 @@
 import SwiftUI
 
-struct SampleArtwork: Hashable {
+struct SampleArtwork: Hashable, Identifiable {
+    typealias ID = String
+    var id: ID
     let title: String
     let artist: String
     let year: String
@@ -22,6 +24,7 @@ struct SampleArtwork: Hashable {
     }
     
     init(jsonArtwork: SampleJson.JsonArtwork?) {
+        self.id = jsonArtwork?.uid ?? ""
         self.title = jsonArtwork?.title ?? ""
         self.year = jsonArtwork?.year ?? ""
         self.artist = jsonArtwork?.artist ?? ""
@@ -31,7 +34,9 @@ struct SampleArtwork: Hashable {
     }
 }
 
-struct SampleBundle: Hashable {
+struct SampleBundle: Hashable, Identifiable {
+    typealias ID = String
+    var id: ID
     var title: String
     var price: String { "$1.99" }
     var artworks: [SampleArtwork]

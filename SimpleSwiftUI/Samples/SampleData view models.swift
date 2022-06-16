@@ -1,6 +1,8 @@
 import SwiftUI
 
-struct ArtworkDataModel: Hashable {
+struct ArtworkViewModel: Hashable, Identifiable {
+    typealias ID = String
+    let id: ID
     let title: String
     let imageName: String
     var image: Image? {
@@ -8,30 +10,36 @@ struct ArtworkDataModel: Hashable {
         return Image(uiImage: imageData)
     }
     
-    init(title: String, price: String, imageName: String) {
+    init(id: String, title: String, price: String, imageName: String) {
+        self.id = id
         self.title = title
         self.imageName = imageName
     }
     init(_ artwork: SampleArtwork) {
+        self.id = artwork.id
         self.title = artwork.title
         self.imageName = artwork.imageSquareName
     }
 }
 
-struct ArtworksGridViewModel: Hashable {
+struct ArtworksGridViewModel: Hashable, Identifiable {
+    typealias ID = String
+    let id: ID
     let title: String
     let price: String
-    let artworks: [ArtworkDataModel]
+    let artworks: [ArtworkViewModel]
 
-    init(title: String, price: String, artworks: [ArtworkDataModel] = []) {
+    init(id: String, title: String, price: String, artworks: [ArtworkViewModel] = []) {
+        self.id = id
         self.title = title
         self.price = price
         self.artworks = artworks
     }
     init(_ bundle: SampleBundle) {
+        self.id = bundle.id
         self.title = bundle.title
         self.price = bundle.price
-        self.artworks = bundle.artworks.map {ArtworkDataModel($0)}
+        self.artworks = bundle.artworks.map {ArtworkViewModel($0)}
     }
 }
 
