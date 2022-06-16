@@ -1,22 +1,13 @@
 import SwiftUI
 
 struct Tab_Library: View {
-    @State private var goToBundle: Bool = false
-    @State private var bundle: SampleBundle = SampleData.sampleBundle
-    var tappedBundle: SampleBundle {bundle}
-    
+    let bundles = BundlesGridViewModel(SampleData.purchasedBundles).bundles
     var body: some View {
         NavigationView {
             ZStack {
                 ScrollView {
-                    BundlesGrid(models: BundlesGridViewModel(SampleData.purchasedBundles).bundles,
-                                showAsPurchased: true) { bundle in
-                        self.bundle = bundle
-                        self.goToBundle.toggle()
-                    }
-                    .padding(4)
+                    BundlesGrid(models: bundles, showAsPurchased: true)
                 }
-                NavigationLink(destination: BundleViewer(bundle: tappedBundle), isActive: $goToBundle) { EmptyView() }
             }
             .navigationTitle("Library")
         }

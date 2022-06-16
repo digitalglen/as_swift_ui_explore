@@ -26,7 +26,7 @@ struct SampleData {
         sampleBundle.artworks.first!
     }
     
-    static func sampleArtwork(id: SampleArtwork.ID) -> SampleArtwork? {
+    static func sampleArtwork(forID id: SampleArtwork.ID) -> SampleArtwork? {
         var match: SampleArtwork? = nil
         sampleBundles.forEach {
             if let artwork = $0.artworks.filter({$0.id == id}).first {
@@ -48,6 +48,10 @@ struct SampleData {
         } else {
             return SampleBundle(id: UUID().uuidString, title: "Invalid Bundle", artworks: [])
         }
+    }
+        
+    static func sampleBundle(forID id: SampleBundle.ID) -> SampleBundle? {
+        sampleBundles.filter {$0.id == id}.first
     }
     
     static var purchasedBundles: [SampleBundle] {

@@ -3,9 +3,13 @@ import SwiftUI
 struct ArtworkViewer: View {
     let artwork: SampleArtwork
     var body: some View {
-        artwork.imageLarge
-            .aspectRatio(contentMode: .fit)
-            .preferredColorScheme(.dark)
+        VStack {
+            artwork.imageLarge
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .preferredColorScheme(.dark)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 

@@ -21,6 +21,8 @@ struct BundlesGridItem: View {
                     if let price = price {
                         Text(price)
                             .foregroundColor( .secondary )
+                    } else {
+                        Text(" ")
                     }
                 }
             }
