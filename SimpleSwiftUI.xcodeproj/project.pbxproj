@@ -637,6 +637,7 @@
 		42F3B527285BA3BB00330BAA /* horsley_sq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B525285BA3BB00330BAA /* horsley_sq.jpg */; };
 		42F3B52A285BA47C00330BAA /* moroccan_woman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B528285BA47C00330BAA /* moroccan_woman.jpg */; };
 		42F3B52B285BA47C00330BAA /* moroccan_woman_sq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B529285BA47C00330BAA /* moroccan_woman_sq.jpg */; };
+		42F3B52E285BA59100330BAA /* PuzzlePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B52D285BA59100330BAA /* PuzzlePlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1271,6 +1272,7 @@
 		42F3B525285BA3BB00330BAA /* horsley_sq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horsley_sq.jpg; sourceTree = "<group>"; };
 		42F3B528285BA47C00330BAA /* moroccan_woman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moroccan_woman.jpg; sourceTree = "<group>"; };
 		42F3B529285BA47C00330BAA /* moroccan_woman_sq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moroccan_woman_sq.jpg; sourceTree = "<group>"; };
+		42F3B52D285BA59100330BAA /* PuzzlePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzlePlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2158,6 +2160,7 @@
 				42F3B4F0285A167C00330BAA /* BundlesGridItem.swift */,
 				42F3B4FE285A6D8B00330BAA /* Bundle */,
 				42F3B507285AB7D800330BAA /* Artwork */,
+				42F3B52C285BA56900330BAA /* Puzzle */,
 				428B005328580A5F00DFCB6A /* Purchase Sheet */,
 				428B00352856B1AA00DFCB6A /* Colors.swift */,
 				428B005A2858189D00DFCB6A /* Samples */,
@@ -2192,6 +2195,14 @@
 				42F3B508285AB7F800330BAA /* ArtworkViewer.swift */,
 			);
 			path = Artwork;
+			sourceTree = "<group>";
+		};
+		42F3B52C285BA56900330BAA /* Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				42F3B52D285BA59100330BAA /* PuzzlePlayer.swift */,
+			);
+			path = Puzzle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2873,6 +2884,7 @@
 				42F3B509285AB7F800330BAA /* ArtworkViewer.swift in Sources */,
 				42F3B50F285B784C00330BAA /* SquareImageGrid.swift in Sources */,
 				428B00382856D12200DFCB6A /* Today.swift in Sources */,
+				42F3B52E285BA59100330BAA /* PuzzlePlayer.swift in Sources */,
 				428B004F2857BFFE00DFCB6A /* PurchaseSheetStyles.swift in Sources */,
 				428B003D2856D2BF00DFCB6A /* CGGeometry+Helpers.swift in Sources */,
 				42F3B500285A6DAE00330BAA /* BundleViewer.swift in Sources */,
