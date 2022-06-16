@@ -74,6 +74,12 @@
             "artist":"Raphael",
             "title":"Young Woman with Unicorn",
             "year":"1506",
+        },
+        {
+            "uid":"horsley",
+            "artist":"Horsley",
+            "title":"Monsieur-se-chauff",
+            "year":"1621",
         }
     ]
 }

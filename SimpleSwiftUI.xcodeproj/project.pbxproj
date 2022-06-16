@@ -629,6 +629,14 @@
 		42F3B513285B914F00330BAA /* david_sq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B512285B914F00330BAA /* david_sq.jpg */; };
 		42F3B519285B925D00330BAA /* kahlo_sq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B518285B925D00330BAA /* kahlo_sq.jpg */; };
 		42F3B51B285B926900330BAA /* kahlo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B51A285B926900330BAA /* kahlo.jpg */; };
+		42F3B51E285BA0B700330BAA /* leyster_sq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B51C285BA0B600330BAA /* leyster_sq.jpg */; };
+		42F3B51F285BA0B700330BAA /* leyster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B51D285BA0B700330BAA /* leyster.jpg */; };
+		42F3B522285BA27800330BAA /* rembrandt_man.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B520285BA27700330BAA /* rembrandt_man.jpg */; };
+		42F3B523285BA27800330BAA /* rembrandt_man_sq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B521285BA27800330BAA /* rembrandt_man_sq.jpg */; };
+		42F3B526285BA3BB00330BAA /* horsley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B524285BA3BA00330BAA /* horsley.jpg */; };
+		42F3B527285BA3BB00330BAA /* horsley_sq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B525285BA3BB00330BAA /* horsley_sq.jpg */; };
+		42F3B52A285BA47C00330BAA /* moroccan_woman.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B528285BA47C00330BAA /* moroccan_woman.jpg */; };
+		42F3B52B285BA47C00330BAA /* moroccan_woman_sq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B529285BA47C00330BAA /* moroccan_woman_sq.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1255,6 +1263,14 @@
 		42F3B512285B914F00330BAA /* david_sq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = david_sq.jpg; sourceTree = "<group>"; };
 		42F3B518285B925D00330BAA /* kahlo_sq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kahlo_sq.jpg; sourceTree = "<group>"; };
 		42F3B51A285B926900330BAA /* kahlo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kahlo.jpg; sourceTree = "<group>"; };
+		42F3B51C285BA0B600330BAA /* leyster_sq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leyster_sq.jpg; sourceTree = "<group>"; };
+		42F3B51D285BA0B700330BAA /* leyster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leyster.jpg; sourceTree = "<group>"; };
+		42F3B520285BA27700330BAA /* rembrandt_man.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rembrandt_man.jpg; sourceTree = "<group>"; };
+		42F3B521285BA27800330BAA /* rembrandt_man_sq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rembrandt_man_sq.jpg; sourceTree = "<group>"; };
+		42F3B524285BA3BA00330BAA /* horsley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horsley.jpg; sourceTree = "<group>"; };
+		42F3B525285BA3BB00330BAA /* horsley_sq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horsley_sq.jpg; sourceTree = "<group>"; };
+		42F3B528285BA47C00330BAA /* moroccan_woman.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moroccan_woman.jpg; sourceTree = "<group>"; };
+		42F3B529285BA47C00330BAA /* moroccan_woman_sq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moroccan_woman_sq.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1441,6 +1457,8 @@
 				428B00DE2858CA5E00DFCB6A /* ghirlandaio_1.jpg */,
 				428B00EA2858CA5F00DFCB6A /* ghirlandaio_2_sq.jpg */,
 				428B00E62858CA5F00DFCB6A /* ghirlandaio_2.jpg */,
+				42F3B51C285BA0B600330BAA /* leyster_sq.jpg */,
+				42F3B51D285BA0B700330BAA /* leyster.jpg */,
 				428B00E42858CA5F00DFCB6A /* macke_1_sq.jpg */,
 				428B00E22858CA5E00DFCB6A /* macke_1.jpg */,
 				428B00DD2858CA5E00DFCB6A /* pissarro-l-hermitage-at-pontoise-1867_sq.jpg */,
@@ -1484,6 +1502,8 @@
 				428B01202858F83D00DFCB6A /* henry-ossawa-tanner-gateway,-tangier-1912_sq.jpg */,
 				428B01212858F83D00DFCB6A /* raphael-sistine-madonna-1514.jpg */,
 				428B01222858F83D00DFCB6A /* raphael-sistine-madonna-1514_sq.jpg */,
+				42F3B521285BA27800330BAA /* rembrandt_man_sq.jpg */,
+				42F3B520285BA27700330BAA /* rembrandt_man.jpg */,
 			);
 			path = "Masterpieces 4";
 			sourceTree = "<group>";
@@ -1491,6 +1511,8 @@
 		428B01442858F98800DFCB6A /* Masterpieces 5 */ = {
 			isa = PBXGroup;
 			children = (
+				42F3B525285BA3BB00330BAA /* horsley_sq.jpg */,
+				42F3B524285BA3BA00330BAA /* horsley.jpg */,
 				428B014D2858F9CE00DFCB6A /* goya-the-third-of-may-1808_sq.jpg */,
 				428B015A2858F9CF00DFCB6A /* goya-the-third-of-may-1808.jpg */,
 				428B014C2858F9CE00DFCB6A /* ingres-portrait-of-mme_Moitessier-1856_sq.jpg */,
@@ -1522,6 +1544,8 @@
 			children = (
 				428B01832858F9EE00DFCB6A /* giorgione-three-philosophers-1508_sq.jpg */,
 				428B01782858F9EE00DFCB6A /* giorgione-three-philosophers-1508.jpg */,
+				42F3B529285BA47C00330BAA /* moroccan_woman_sq.jpg */,
+				42F3B528285BA47C00330BAA /* moroccan_woman.jpg */,
 				428B01762858F9ED00DFCB6A /* piero-della-francesca-the-baptism-of-christ-1450_sq.jpg */,
 				428B017B2858F9EE00DFCB6A /* piero-della-francesca-the-baptism-of-christ-1450.jpg */,
 				428B01772858F9ED00DFCB6A /* pieter-claesz-vanitas-1630_sq.jpg */,
@@ -2318,6 +2342,7 @@
 				428B01652858F9CF00DFCB6A /* raphael-Young-Woman-with-Unicorn-1506.jpg in Resources */,
 				428B02512858FB0C00DFCB6A /* loc-filling-station-pie-town-new-mexico@2x.jpg in Resources */,
 				428B03922858FD5400DFCB6A /* angelico-st-lawrence-distributing-alms-1450.jpg in Resources */,
+				42F3B526285BA3BB00330BAA /* horsley.jpg in Resources */,
 				428B04E52859056800DFCB6A /* brueghel-the-harvesters@2x.jpg in Resources */,
 				428B016F2858F9CF00DFCB6A /* Paolo_Uccello-the-battle-of-san-romano-1460.jpg in Resources */,
 				428B041D2858FEA200DFCB6A /* bosch-ecce-homo-1490s_sq.jpg in Resources */,
@@ -2390,6 +2415,7 @@
 				428B03EF2858FE8D00DFCB6A /* bierstadt-8_sq.jpg in Resources */,
 				428B04892859054000DFCB6A /* bouguereau-parure-des-champs-1884_sq.jpg in Resources */,
 				428B05692859059100DFCB6A /* brueghel-nederlandish-proverbs-8.jpg in Resources */,
+				42F3B522285BA27800330BAA /* rembrandt_man.jpg in Resources */,
 				428B03EE2858FE8D00DFCB6A /* bierstadt-10.jpg in Resources */,
 				428B041F2858FEA200DFCB6A /* bosch-adoration-of-the-magi-1475.jpg in Resources */,
 				428B051F2859058200DFCB6A /* brueghel-games-2@2x.jpg in Resources */,
@@ -2436,6 +2462,7 @@
 				428B025A2858FB1600DFCB6A /* collection_loc_3.json in Resources */,
 				428B02952858FB2D00DFCB6A /* loc-boys-on-truck-robstown-texas.jpg in Resources */,
 				428B052C2859058200DFCB6A /* brueghel-games-4_sq.jpg in Resources */,
+				42F3B52B285BA47C00330BAA /* moroccan_woman_sq.jpg in Resources */,
 				428B02892858FB2D00DFCB6A /* loc-boys-on-truck-robstown-texas@2x.jpg in Resources */,
 				428B05342859058200DFCB6A /* brueghel-games-6_sq.jpg in Resources */,
 				428B03C42858FE6B00DFCB6A /* steinlen-la-tournée-du-Chat-Noir-1896_sq.jpg in Resources */,
@@ -2466,6 +2493,8 @@
 				428B016A2858F9CF00DFCB6A /* klimt-the-kiss-1909.jpg in Resources */,
 				428B02472858FB0C00DFCB6A /* loc-sorting-and-packing-tomatoes-puerto-rico_sq.jpg in Resources */,
 				428B01D92858FAEC00DFCB6A /* loc-eagle-fruit-store-and-capital-hotel-lincoln-nebraska.jpg in Resources */,
+				42F3B523285BA27800330BAA /* rembrandt_man_sq.jpg in Resources */,
+				42F3B527285BA3BB00330BAA /* horsley_sq.jpg in Resources */,
 				428B01EC2858FAEC00DFCB6A /* loc-farm-auction-derby-conn_sq@2x.jpg in Resources */,
 				428B04862859054000DFCB6A /* bouguereau-the-bird-ch-ri-1867.jpg in Resources */,
 				428B04482858FEB200DFCB6A /* bosch-the-haywain-triptych-center-1516_sq.jpg in Resources */,
@@ -2496,6 +2525,7 @@
 				428B00F02858CA5F00DFCB6A /* ghirlandaio_1_sq.jpg in Resources */,
 				428B05672859059100DFCB6A /* brueghel-nederlandish-proverbs-1_sq.jpg in Resources */,
 				428B04B12859055200DFCB6A /* bouguereau-little-sulky-1888.jpg in Resources */,
+				42F3B51F285BA0B700330BAA /* leyster.jpg in Resources */,
 				428B00C12858C30200DFCB6A /* manet-the-balcony-1869_sq.jpg in Resources */,
 				428B007928581A6100DFCB6A /* cezanne_1.jpg in Resources */,
 				428B03592858FD3100DFCB6A /* angelico-the-healing-of-justinian-by-saint-cosmas-and-saint-damian-1440.jpg in Resources */,
@@ -2676,6 +2706,7 @@
 				428B05382859058200DFCB6A /* brueghel-games-8.jpg in Resources */,
 				428B05602859059100DFCB6A /* brueghel-nederlandish-proverbs-2.jpg in Resources */,
 				428B01332858F83D00DFCB6A /* david-napoleon-crossing-the-alps-1801_sq.jpg in Resources */,
+				42F3B52A285BA47C00330BAA /* moroccan_woman.jpg in Resources */,
 				428B01FD2858FAED00DFCB6A /* loc-main-street-cascade-idaho_sq@2x.jpg in Resources */,
 				428B00B92858C30200DFCB6A /* seurat_1_sq.jpg in Resources */,
 				428B03C82858FE6B00DFCB6A /* mucha-biscuits-lefevre-Utile-1896_sq.jpg in Resources */,
@@ -2732,6 +2763,7 @@
 				428B05362859058200DFCB6A /* brueghel-games-11_sq@2x.jpg in Resources */,
 				428B056E2859059100DFCB6A /* brueghel-nederlandish-proverbs-9.jpg in Resources */,
 				428B03B82858FE6B00DFCB6A /* mucha-beer-of-the-meuse-1897.jpg in Resources */,
+				42F3B51E285BA0B700330BAA /* leyster_sq.jpg in Resources */,
 				428B019E2858F9EF00DFCB6A /* rembrandt-portrait-of-an-elderly-man-1667.jpg in Resources */,
 				428B02A32858FB2D00DFCB6A /* loc-vermont-state-fair.jpg in Resources */,
 				428B01352858F83D00DFCB6A /* diego-velázquez-portrait-of-pope-innocent-x-1650_sq.jpg in Resources */,

@@ -73,6 +73,11 @@
             "uid":"raphael-sistine-madonna-1514",
             "artist":"Raphael",
             "title":"Sistine Madonna",
+        },
+        {
+            "uid":"rembrandt_man",
+            "artist":"Rembrandt",
+            "title":"Man",
         }
     ]
 }

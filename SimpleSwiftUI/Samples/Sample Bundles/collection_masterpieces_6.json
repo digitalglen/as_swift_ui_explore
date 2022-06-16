@@ -74,6 +74,11 @@
             "artist":"Victor Gilbert",
             "title":"Market Day",
             "year":"1882",
+        },
+        {
+            "uid":"moroccan_woman",
+            "artist":"Unknown",
+            "title":"Moroccan Woman",
         }
     ]
 }
