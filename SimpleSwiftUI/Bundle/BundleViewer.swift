@@ -2,20 +2,30 @@ import SwiftUI
 
 struct BundleViewer: View {
     let bundle: SampleBundle
+    @State private var goToArtworkViewer: Bool = false
+    @State private var artwork: SampleArtwork?
+    var tappedArtwork: SampleArtwork {artwork!}
+    
     var body: some View {
         ZStack(alignment: .top) {
-            ArtworksGrid(model: ArtworksGridViewModel(bundle), showAsPurchased: true)
+            BundleViewerGrid(model: ArtworksGridViewModel(bundle), showAsPurchased: true) { artwork in
+                self.artwork = artwork
+                self.goToArtworkViewer.toggle()
+            }
 
+            if goToArtworkViewer {
+                NavigationLink(destination: ArtworkViewer(artwork: tappedArtwork), isActive: $goToArtworkViewer) { EmptyView() }
+            }
             VStack {
-                Text("HELLO")
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 150)
-                    .background(Material.bar)
-//                    .background(.black.opacity(0.75))
+//                Text("")
+//                    .frame(maxWidth: .infinity)
+//                    .frame(height: 150)
+//                    .background(Material.bar)
             }
         }
         .navigationBarTitle(bundle.title)
-        .background(ignoresSafeAreaEdges: [.horizontal])
+        .background(Color.clear.ignoresSafeArea(.all, edges: [.bottom]))
+//        .fullscreen()
     }
 }
 

@@ -22,7 +22,6 @@ struct Tab_Library: View {
         }
         .preferredColorScheme(.dark)
         .navigationViewStyle(StackNavigationViewStyle())
-
     }
 }
 

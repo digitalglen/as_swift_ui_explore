@@ -11,7 +11,11 @@ struct SampleData {
         cache.bundles.all = sampleBundleFileNames.map {sampleBundle(filename: $0)}
         return cache.bundles.all ?? []
     }
-
+    
+    static var sampleArtwork: SampleArtwork {
+        sampleBundle.artworks.first!
+    }
+    
     static var sampleBundle: SampleBundle {
         sampleBundles.last!
     }

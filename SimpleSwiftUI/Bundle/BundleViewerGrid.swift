@@ -1,8 +1,9 @@
 import SwiftUI
 
-struct ArtworksGrid: View {
+struct BundleViewerGrid: View {
     let model: ArtworksGridViewModel
     let showAsPurchased: Bool
+    let onTap: ((_ artwork: SampleArtwork) -> Void)?
     
     let cellSpacing: Double = 2
     var columns: [GridItem] { Array(repeating: GridItem(.flexible(), spacing: cellSpacing, alignment: .center), count: 3) }
@@ -13,30 +14,22 @@ struct ArtworksGrid: View {
                     ZStack(alignment: .top) {
                         SampleViews.image(for: model.imageName)
                             .squared()
+                            .onTapGesture {
+                                onTap?(SampleData.sampleArtwork)
+                            }
                     }
                 }
             }
             .frame(maxWidth: .infinity)
             .font( .body)
-            .cornerRadius(8)
-            HStack {
-                VStack {
-                    Text(model.title)
-                        .foregroundColor( .primary )
-                    Text(model.price)
-                        .foregroundColor( .secondary )
-                        .opacity( showAsPurchased ? 0 : 1)
-                }
-            }
         }
     }
 }
 
-struct ArtworksGrid_Previews: PreviewProvider {
+struct BundleViewerGrid_Previews: PreviewProvider {
     static var previews: some View {
         let model = ArtworksGridViewModel(SampleData.sampleBundle)
-        ArtworksGrid(model: model, showAsPurchased: false)
-            .previewLayout(.fixed(width: 250, height: 500))
+        BundleViewerGrid(model: model, showAsPurchased: false, onTap: nil)
             .padding([.all], 20)
             .preferredColorScheme(.dark)
     }

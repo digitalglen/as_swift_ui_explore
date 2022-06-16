@@ -9,7 +9,7 @@ enum Tab {
 }
 
 struct Tabs: View {
-    @State private var tabSelection: Tab = .dev
+    @State private var tabSelection: Tab = .library
     
     var body: some View {
         TabView(selection: $tabSelection) {

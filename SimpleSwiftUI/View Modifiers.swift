@@ -8,6 +8,10 @@ extension View {
     func squared() -> some View {
         modifier(SquareViewModifier())
     }
+    
+    func fullscreen() -> some View {
+      modifier(Fullscreen())
+    }
 }
 
 // ---------------------------------------------
@@ -27,4 +31,13 @@ struct SquareViewModifier: ViewModifier {
     content
           .aspectRatio(1.0, contentMode: .fill)
   }
+}
+
+struct Fullscreen: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .statusBar(hidden: true)
+            .navigationBarHidden(true)
+            .ignoresSafeArea()
+    }
 }

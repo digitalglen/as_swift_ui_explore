@@ -621,6 +621,8 @@
 		42F3B500285A6DAE00330BAA /* BundleViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B4FF285A6DAE00330BAA /* BundleViewer.swift */; };
 		42F3B502285A96A700330BAA /* View Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B501285A96A700330BAA /* View Helpers.swift */; };
 		42F3B504285A9A0900330BAA /* Image Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B503285A9A0900330BAA /* Image Modifiers.swift */; };
+		42F3B506285AB5A800330BAA /* BundleViewerGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B505285AB5A800330BAA /* BundleViewerGrid.swift */; };
+		42F3B509285AB7F800330BAA /* ArtworkViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B508285AB7F800330BAA /* ArtworkViewer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1239,6 +1241,8 @@
 		42F3B4FF285A6DAE00330BAA /* BundleViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleViewer.swift; sourceTree = "<group>"; };
 		42F3B501285A96A700330BAA /* View Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View Helpers.swift"; sourceTree = "<group>"; };
 		42F3B503285A9A0900330BAA /* Image Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image Modifiers.swift"; sourceTree = "<group>"; };
+		42F3B505285AB5A800330BAA /* BundleViewerGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleViewerGrid.swift; sourceTree = "<group>"; };
+		42F3B508285AB7F800330BAA /* ArtworkViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViewer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2111,6 +2115,7 @@
 				428B00332856956800DFCB6A /* BundlesGrid.swift */,
 				42F3B4F0285A167C00330BAA /* ArtworksGrid.swift */,
 				42F3B4FE285A6D8B00330BAA /* Bundle */,
+				42F3B507285AB7D800330BAA /* Artwork */,
 				428B005328580A5F00DFCB6A /* Purchase Sheet */,
 				428B00352856B1AA00DFCB6A /* Colors.swift */,
 				428B005A2858189D00DFCB6A /* Samples */,
@@ -2134,8 +2139,17 @@
 			isa = PBXGroup;
 			children = (
 				42F3B4FF285A6DAE00330BAA /* BundleViewer.swift */,
+				42F3B505285AB5A800330BAA /* BundleViewerGrid.swift */,
 			);
 			path = Bundle;
+			sourceTree = "<group>";
+		};
+		42F3B507285AB7D800330BAA /* Artwork */ = {
+			isa = PBXGroup;
+			children = (
+				42F3B508285AB7F800330BAA /* ArtworkViewer.swift */,
+			);
+			path = Artwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2790,6 +2804,7 @@
 				42F3B4F7285A4CE100330BAA /* View Models.swift in Sources */,
 				42F3B4FB285A541200330BAA /* TodayBeforeView.swift in Sources */,
 				428B00432857708200DFCB6A /* Tabs.swift in Sources */,
+				42F3B506285AB5A800330BAA /* BundleViewerGrid.swift in Sources */,
 				428B005928580FF300DFCB6A /* SampleData.swift in Sources */,
 				42F3B4EF285945F800330BAA /* SampleData models.swift in Sources */,
 				428B002F28566B9100DFCB6A /* PurchaseSheet.swift in Sources */,
@@ -2800,6 +2815,7 @@
 				428B003B2856D1DE00DFCB6A /* UIImage+Helpers.swift in Sources */,
 				428F691C28566A290012CDE8 /* Tab_Settings.swift in Sources */,
 				428B00452857713A00DFCB6A /* Tab_Dev.swift in Sources */,
+				42F3B509285AB7F800330BAA /* ArtworkViewer.swift in Sources */,
 				428B00382856D12200DFCB6A /* Today.swift in Sources */,
 				428B004F2857BFFE00DFCB6A /* PurchaseSheetStyles.swift in Sources */,
 				428B003D2856D2BF00DFCB6A /* CGGeometry+Helpers.swift in Sources */,

@@ -3,26 +3,28 @@ import SwiftUI
 struct Tab_Store: View {
     @ObservedObject var state: StoreState = StoreState()
     var body: some View {
-        ZStack {
-            VStack {
-                Text("Store")
-                    .font(.largeTitle)
-                ScrollView {
-                    BundlesGrid(models: BundlesGridViewModel(SampleData.bundles).bundles,
-                                showAsPurchased: true) { bundle in
-                        withAnimation {
-                            state.purchaseSheetBundle = bundle
-                            state.purchaseSheetIsVisible = true
+        NavigationView {
+            ZStack {
+                VStack {
+                    ScrollView {
+                        BundlesGrid(models: BundlesGridViewModel(SampleData.bundles).bundles,
+                                    showAsPurchased: false) { bundle in
+                            withAnimation {
+                                state.purchaseSheetBundle = bundle
+                                state.purchaseSheetIsVisible = true
+                            }
                         }
+                        .padding(4)
                     }
-                    .padding(4)
                 }
+                PurchaseSheet(state: state)
             }
-            PurchaseSheet(state: state)
+            .navigationTitle("Store")
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .foregroundColor(.primary)
         .preferredColorScheme(.dark)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
