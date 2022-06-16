@@ -68,6 +68,12 @@
             "uid":"toulouse_lautrec_1",
             "artist":"Henri de Toulouse Lautrec",
             "title":"Moulin Rouge",
+        },
+        {
+            "uid":"david",
+            "artist":"Jacques-Louis David",
+            "title":"Oath of Horatii",
+            "year":"1784",
         }
     ]
 }

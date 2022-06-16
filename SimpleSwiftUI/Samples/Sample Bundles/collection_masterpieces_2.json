@@ -101,6 +101,11 @@
             "year":"1833",
             "format":"hex-medium",
             "brightness-thumb-bottom-right":"light",
+        },
+        {
+            "uid":"kahlo",
+            "artist":"Frieda Kahlo",
+            "title":"Self-portrait",
         }
     ]
 }

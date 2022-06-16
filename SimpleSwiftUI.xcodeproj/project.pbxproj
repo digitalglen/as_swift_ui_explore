@@ -625,6 +625,10 @@
 		42F3B509285AB7F800330BAA /* ArtworkViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B508285AB7F800330BAA /* ArtworkViewer.swift */; };
 		42F3B50B285ACC9900330BAA /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B50A285ACC9900330BAA /* NavigationLazyView.swift */; };
 		42F3B50F285B784C00330BAA /* SquareImageGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B50E285B784C00330BAA /* SquareImageGrid.swift */; };
+		42F3B511285B913B00330BAA /* david.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B510285B913B00330BAA /* david.jpg */; };
+		42F3B513285B914F00330BAA /* david_sq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B512285B914F00330BAA /* david_sq.jpg */; };
+		42F3B519285B925D00330BAA /* kahlo_sq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B518285B925D00330BAA /* kahlo_sq.jpg */; };
+		42F3B51B285B926900330BAA /* kahlo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42F3B51A285B926900330BAA /* kahlo.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1247,6 +1251,10 @@
 		42F3B508285AB7F800330BAA /* ArtworkViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViewer.swift; sourceTree = "<group>"; };
 		42F3B50A285ACC9900330BAA /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		42F3B50E285B784C00330BAA /* SquareImageGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareImageGrid.swift; sourceTree = "<group>"; };
+		42F3B510285B913B00330BAA /* david.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = david.jpg; sourceTree = "<group>"; };
+		42F3B512285B914F00330BAA /* david_sq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = david_sq.jpg; sourceTree = "<group>"; };
+		42F3B518285B925D00330BAA /* kahlo_sq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kahlo_sq.jpg; sourceTree = "<group>"; };
+		42F3B51A285B926900330BAA /* kahlo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kahlo.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1375,6 +1383,8 @@
 				428B007028581A6100DFCB6A /* coolidge_1.jpg */,
 				428B005E28581A6000DFCB6A /* copley_1_sq.jpg */,
 				428B006B28581A6100DFCB6A /* copley_1.jpg */,
+				42F3B510285B913B00330BAA /* david.jpg */,
+				42F3B512285B914F00330BAA /* david_sq.jpg */,
 				428B005F28581A6000DFCB6A /* gainsborough_1_sq.jpg */,
 				428B007128581A6100DFCB6A /* gainsborough_1.jpg */,
 				428B006428581A6000DFCB6A /* goya_1_sq.jpg */,
@@ -1398,6 +1408,8 @@
 				428B00A22858C30200DFCB6A /* davinci-the-lady-with-the-ermine-cecilia-gallerani-1496.jpg */,
 				428B009E2858C30100DFCB6A /* hokusai-ocean-waves-1833_sq.jpg */,
 				428B00A92858C30200DFCB6A /* hokusai-ocean-waves-1833.jpg */,
+				42F3B51A285B926900330BAA /* kahlo.jpg */,
+				42F3B518285B925D00330BAA /* kahlo_sq.jpg */,
 				428B00A12858C30100DFCB6A /* manet-the-balcony-1869_sq.jpg */,
 				428B00A82858C30200DFCB6A /* manet-the-balcony-1869.jpg */,
 				428B00902858C30000DFCB6A /* monet_1_sq.jpg */,
@@ -2277,6 +2289,7 @@
 				428B038D2858FD5400DFCB6A /* angelico-receiving-the-stigmata-1429.jpg in Resources */,
 				428B03062858FCFF00DFCB6A /* alma-tadema-the-education-of-the-children-of-clovis-1861_sq.jpg in Resources */,
 				428B00B12858C30200DFCB6A /* moore_1_sq.jpg in Resources */,
+				42F3B519285B925D00330BAA /* kahlo_sq.jpg in Resources */,
 				428B04882859054000DFCB6A /* bouguereau-the-shell-1871.jpg in Resources */,
 				428B03572858FD3100DFCB6A /* angelico-lamentation-over-christ-1441_sq.jpg in Resources */,
 				428B038E2858FD5400DFCB6A /* angelico-the-story-of-st-nicholas-1448.jpg in Resources */,
@@ -2526,6 +2539,7 @@
 				428B00FA2858CA5F00DFCB6A /* ghirlandaio_1.jpg in Resources */,
 				428B03052858FCFF00DFCB6A /* alma-tadema-spring-flowers.jpg in Resources */,
 				428B02FF2858FCFF00DFCB6A /* alma-tadema-an-oleander-1882_sq.jpg in Resources */,
+				42F3B511285B913B00330BAA /* david.jpg in Resources */,
 				428B01F22858FAEC00DFCB6A /* loc-commuters-lowell-mass_sq.jpg in Resources */,
 				428B00F12858CA5F00DFCB6A /* remington-buying-polo-ponies-in-the-west-1905_sq.jpg in Resources */,
 				428B03EC2858FE8D00DFCB6A /* collection_bierstadt.json in Resources */,
@@ -2648,6 +2662,7 @@
 				428B03CE2858FE6B00DFCB6A /* mucha-zodiac-1896_sq.jpg in Resources */,
 				428B029A2858FB2D00DFCB6A /* loc-garage-mechanic-newark-nj.jpg in Resources */,
 				428B053C2859058200DFCB6A /* brueghel-games-5_sq@2x.jpg in Resources */,
+				42F3B513285B914F00330BAA /* david_sq.jpg in Resources */,
 				428B00F92858CA5F00DFCB6A /* pissarro-l-hermitage-at-pontoise-1867_sq.jpg in Resources */,
 				428B047D2859054000DFCB6A /* bouguereau-a-childhood-idyll-1900_sq.jpg in Resources */,
 				428B04B52859055200DFCB6A /* bouguereau-knitting-machine-1879.jpg in Resources */,
@@ -2721,6 +2736,7 @@
 				428B02A32858FB2D00DFCB6A /* loc-vermont-state-fair.jpg in Resources */,
 				428B01352858F83D00DFCB6A /* diego-velázquez-portrait-of-pope-innocent-x-1650_sq.jpg in Resources */,
 				428B04852859054000DFCB6A /* bouguereau-lady-maxwell-1890.jpg in Resources */,
+				42F3B51B285B926900330BAA /* kahlo.jpg in Resources */,
 				428B01FA2858FAED00DFCB6A /* loc-farm-auction-derby-conn_sq.jpg in Resources */,
 				428B035E2858FD3100DFCB6A /* angelico-virgin-and-child-1.jpg in Resources */,
 				428B03082858FCFF00DFCB6A /* alma-tadema-anna-alma-tadema-1883_sq.jpg in Resources */,
