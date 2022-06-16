@@ -11,6 +11,16 @@ struct SampleData {
         cache.bundles.all = sampleBundleFileNames.map {sampleBundle(filename: $0)}
         return cache.bundles.all ?? []
     }
+
+    private static var allImageNames: [String] {
+        sampleBundles.reduce([]) { partialResult, bundle in
+            partialResult + bundle.artworks.map {$0.imageSquareName}
+        }
+    }
+
+    static func sampleImageNames(count: Int) -> [String] {
+        allImageNames.dropLast(allImageNames.count - count)
+    }
     
     static var sampleArtwork: SampleArtwork {
         sampleBundle.artworks.first!

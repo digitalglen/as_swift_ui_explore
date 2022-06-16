@@ -624,6 +624,7 @@
 		42F3B506285AB5A800330BAA /* BundleViewerGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B505285AB5A800330BAA /* BundleViewerGrid.swift */; };
 		42F3B509285AB7F800330BAA /* ArtworkViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B508285AB7F800330BAA /* ArtworkViewer.swift */; };
 		42F3B50B285ACC9900330BAA /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B50A285ACC9900330BAA /* NavigationLazyView.swift */; };
+		42F3B50F285B784C00330BAA /* SquareImageGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F3B50E285B784C00330BAA /* SquareImageGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1245,6 +1246,7 @@
 		42F3B505285AB5A800330BAA /* BundleViewerGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleViewerGrid.swift; sourceTree = "<group>"; };
 		42F3B508285AB7F800330BAA /* ArtworkViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViewer.swift; sourceTree = "<group>"; };
 		42F3B50A285ACC9900330BAA /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		42F3B50E285B784C00330BAA /* SquareImageGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareImageGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1272,6 +1274,7 @@
 				428B003C2856D2BF00DFCB6A /* CGGeometry+Helpers.swift */,
 				428B003A2856D1DE00DFCB6A /* UIImage+Helpers.swift */,
 				42F3B50A285ACC9900330BAA /* NavigationLazyView.swift */,
+				42F3B50E285B784C00330BAA /* SquareImageGrid.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -2820,6 +2823,7 @@
 				428B00452857713A00DFCB6A /* Tab_Dev.swift in Sources */,
 				42F3B50B285ACC9900330BAA /* NavigationLazyView.swift in Sources */,
 				42F3B509285AB7F800330BAA /* ArtworkViewer.swift in Sources */,
+				42F3B50F285B784C00330BAA /* SquareImageGrid.swift in Sources */,
 				428B00382856D12200DFCB6A /* Today.swift in Sources */,
 				428B004F2857BFFE00DFCB6A /* PurchaseSheetStyles.swift in Sources */,
 				428B003D2856D2BF00DFCB6A /* CGGeometry+Helpers.swift in Sources */,

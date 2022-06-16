@@ -34,11 +34,8 @@ struct BundlesGrid_Previews: PreviewProvider {
         VStack {
             BundlesGrid(models: models, showAsPurchased: false, onTap: nil)
                 .preferredColorScheme(.dark)
-
-            Divider()
-                .background(.primary)
-            BundlesGrid(models: models, showAsPurchased: true, onTap: nil)
-                .preferredColorScheme(.dark)
         }
+            .previewLayout(.fixed(width: 900, height: 520))
+            .previewDisplayName("Bundles Grid")
     }
 }
