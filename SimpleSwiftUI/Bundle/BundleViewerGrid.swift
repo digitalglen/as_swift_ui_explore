@@ -9,10 +9,10 @@ struct BundleViewerGrid: View {
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
             LazyVGrid(columns: columns, spacing: cellSpacing) {
-                ForEach(model.artworks, id: \.self) { model in
+                ForEach(model.artworks, id: \.self) { artwork in
                     ZStack(alignment: .top) {
-                        NavigationLink(destination: ArtworkViewer(artwork: SampleData.sampleArtwork(forID: model.id)!)) {
-                            SampleViews.image(for: model.imageName)
+                        NavigationLink(destination: ArtworkViewer(artwork: SampleData.sampleArtwork(forID: artwork.id)!)) {
+                            SampleViews.image(for: artwork.imageName)
                                 .squared()
                         }
                     }

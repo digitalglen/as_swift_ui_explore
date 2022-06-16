@@ -11,7 +11,7 @@ struct PuzzlePlayer: View {
         .onTapGesture {
             state.isPresented = false
         }
-        .fullscreen()
+//        .fullscreen()
     }
 }
 
