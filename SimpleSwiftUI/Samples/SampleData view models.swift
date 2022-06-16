@@ -22,7 +22,19 @@ struct ArtworkViewModel: Hashable, Identifiable {
     }
 }
 
-struct ArtworksGridViewModel: Hashable, Identifiable {
+
+struct BundlesGridViewModel: Hashable {
+    let bundles: [BundlesGridItemViewModel]
+
+    init(bundles: [BundlesGridItemViewModel] = []) {
+        self.bundles = bundles
+    }
+    init(_ bundles: [SampleBundle]) {
+        self.bundles = bundles.map {BundlesGridItemViewModel($0)}
+    }
+}
+
+struct BundlesGridItemViewModel: Hashable, Identifiable {
     typealias ID = String
     let id: ID
     let title: String
@@ -40,17 +52,5 @@ struct ArtworksGridViewModel: Hashable, Identifiable {
         self.title = bundle.title
         self.price = bundle.price
         self.artworks = bundle.artworks.map {ArtworkViewModel($0)}
-    }
-}
-
-
-struct BundlesGridViewModel: Hashable {
-    let bundles: [ArtworksGridViewModel]
-
-    init(bundles: [ArtworksGridViewModel] = []) {
-        self.bundles = bundles
-    }
-    init(_ bundles: [SampleBundle]) {
-        self.bundles = bundles.map {ArtworksGridViewModel($0)}
     }
 }

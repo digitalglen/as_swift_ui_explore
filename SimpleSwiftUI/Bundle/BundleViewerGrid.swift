@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct BundleViewerGrid: View {
-    let model: ArtworksGridViewModel
+    let model: BundlesGridItemViewModel
     let showAsPurchased: Bool
     let onTap: ((_ artworkID: SampleArtwork.ID) -> Void)?
     
@@ -28,7 +28,7 @@ struct BundleViewerGrid: View {
 
 struct BundleViewerGrid_Previews: PreviewProvider {
     static var previews: some View {
-        let model = ArtworksGridViewModel(SampleData.sampleBundle)
+        let model = BundlesGridItemViewModel(SampleData.sampleBundle)
         BundleViewerGrid(model: model, showAsPurchased: false, onTap: nil)
             .padding([.all], 20)
             .preferredColorScheme(.dark)

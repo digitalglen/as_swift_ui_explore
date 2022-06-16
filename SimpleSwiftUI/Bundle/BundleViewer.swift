@@ -7,20 +7,16 @@ struct BundleViewer: View {
     
     var body: some View {
         ZStack(alignment: .top) {
-            BundleViewerGrid(model: ArtworksGridViewModel(bundle), showAsPurchased: true) { artworkID in
+            BundleViewerGrid(model: BundlesGridItemViewModel(bundle), showAsPurchased: true) { artworkID in
                 self.artwork = SampleData.sampleArtwork(id: artworkID)
                 self.goToArtworkViewer.toggle()
             }
 
             if goToArtworkViewer {
-                navigationLink(for: artwork!)
+                NavigationLink(destination: NavigationLazyView(ArtworkViewer(artwork: artwork!))) { Text("") }
             }
         }
         .navigationBarTitle(bundle.title)
-    }
-    
-    func navigationLink(for artwork: SampleArtwork) -> some View {
-        NavigationLink(destination: ArtworkViewer(artwork: artwork), isActive: .constant(true)) { EmptyView() }
     }
 }
 

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct BundlesGrid: View {
-    let models: [ArtworksGridViewModel]
+    let models: [BundlesGridItemViewModel]
     let showAsPurchased: Bool
     let onTap: ((_ bundle: SampleBundle) -> Void)?
 
@@ -13,7 +13,7 @@ struct BundlesGrid: View {
                     Spacer(minLength: 20)
                     LazyVGrid(columns: bundleColumns, spacing: 10) {
                         ForEach(models, id: \.self) { model in
-                            ArtworksGrid(model: model, showAsPurchased: showAsPurchased)
+                            BundlesGridItem(model: model, showAsPurchased: showAsPurchased)
                             .onTapGesture {
                                 onTap?(SampleData.sampleBundle)
                             }
@@ -29,8 +29,16 @@ struct BundlesGrid: View {
 
 struct BundlesGrid_Previews: PreviewProvider {
     static var previews: some View {
-        let models = BundlesGridViewModel(SampleData.bundles).bundles
-        BundlesGrid(models: models, showAsPurchased: false, onTap: nil)
-            .preferredColorScheme(.dark)
+        let bundles = Array(SampleData.bundles[0...4])
+        let models = BundlesGridViewModel(bundles).bundles
+        VStack {
+            BundlesGrid(models: models, showAsPurchased: false, onTap: nil)
+                .preferredColorScheme(.dark)
+
+            Divider()
+                .background(.primary)
+            BundlesGrid(models: models, showAsPurchased: true, onTap: nil)
+                .preferredColorScheme(.dark)
+        }
     }
 }
