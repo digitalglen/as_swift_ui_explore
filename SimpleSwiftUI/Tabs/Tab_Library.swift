@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct Tab_Library: View {
-    let models = SampleViewModels.bundles
+    let models = ViewModel.samples.bundles
     var body: some View {
         NavigationView {
             ZStack {

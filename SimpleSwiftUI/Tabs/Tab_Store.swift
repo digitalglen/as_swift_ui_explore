@@ -2,7 +2,7 @@ import SwiftUI
 
 struct Tab_Store: View {
     @ObservedObject var state: StoreState = StoreState()
-    let models = SampleViewModels.purchasedBundles
+    let models = ViewModel.samples.purchasedBundles
     var body: some View {
         NavigationView {
             ZStack {

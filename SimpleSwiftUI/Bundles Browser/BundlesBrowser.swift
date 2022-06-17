@@ -12,8 +12,7 @@ struct BundlesBrowser: View {
 
 struct BundlesBrowser_Previews: PreviewProvider {
     static var previews: some View {
-        let bundles = Array(SampleData.bundles[0...4])
-        let models = bundles.map {ViewModel.Bundle($0)}
+        let models = Array(ViewModel.samples.bundles[0...4])
         BundlesBrowser(models: models, showAsPurchased: false)
             .preferredColorScheme(.dark)
     }

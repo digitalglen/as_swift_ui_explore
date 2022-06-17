@@ -11,7 +11,7 @@ struct BundleViewer: View {
 
 struct BundleViewer_Previews: PreviewProvider {
     static var previews: some View {
-        BundleViewer(model: ViewModel.Bundle(SampleData.bundle))
+        BundleViewer(model: ViewModel.samples.bundle)
             .preferredColorScheme(.dark)
     }
 }

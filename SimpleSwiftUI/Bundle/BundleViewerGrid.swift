@@ -25,7 +25,7 @@ struct BundleViewerGrid: View {
 
 struct BundleViewerGrid_Previews: PreviewProvider {
     static var previews: some View {
-        let model = ViewModel.Bundle(SampleData.bundle)
+        let model = ViewModel.samples.bundle
         BundleViewerGrid(model: model)
             .padding([.all], 20)
             .preferredColorScheme(.dark)

@@ -32,7 +32,7 @@ struct BundlesBrowser_GridItem: View {
 
 struct BundlesGridItem_Previews: PreviewProvider {
     static var previews: some View {
-        let model = ViewModel.Bundle(SampleData.bundle)
+        let model = ViewModel.samples.bundle
         HStack(alignment: .top) {
             BundlesBrowser_GridItem(model: model, showAsPurchased: false)
                 .padding([.all], 20)

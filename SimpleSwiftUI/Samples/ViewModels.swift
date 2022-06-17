@@ -1,15 +1,17 @@
 import SwiftUI
 
-struct SampleViewModels {
-    static var bundles: [ViewModel.Bundle] {
-        SampleData.bundles.map { ViewModel.Bundle($0) }
-    }
-    static var purchasedBundles: [ViewModel.Bundle] {
-        SampleData.purchasedBundles.map { ViewModel.Bundle($0) }
-    }
-}
-
 struct ViewModel {
+    struct samples {
+        static var bundle: ViewModel.Bundle {
+            bundles.last!
+        }
+        static var bundles: [ViewModel.Bundle] {
+            SampleData.bundles.map { ViewModel.Bundle($0) }
+        }
+        static var purchasedBundles: [ViewModel.Bundle] {
+            SampleData.purchasedBundles.map { ViewModel.Bundle($0) }
+        }
+    }
     struct Artwork: Hashable, Identifiable {
         typealias ID = String
         let id: ID
