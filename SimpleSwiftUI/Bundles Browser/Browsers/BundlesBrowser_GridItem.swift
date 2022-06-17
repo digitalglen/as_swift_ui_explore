@@ -1,7 +1,7 @@
 import SwiftUI
 
-struct BundlesGridItem: View {
-    let model: BundlesGridItemViewModel
+struct BundlesBrowser_GridItem: View {
+    let model: ViewModel.Bundle
     let showAsPurchased: Bool
     
     var body: some View {
@@ -32,16 +32,16 @@ struct BundlesGridItem: View {
 
 struct BundlesGridItem_Previews: PreviewProvider {
     static var previews: some View {
-        let model = BundlesGridItemViewModel(SampleData.sampleBundle)
+        let model = ViewModel.Bundle(SampleData.bundle)
         HStack(alignment: .top) {
-            BundlesGridItem(model: model, showAsPurchased: false)
+            BundlesBrowser_GridItem(model: model, showAsPurchased: false)
                 .padding([.all], 20)
                 .preferredColorScheme(.dark)
 
             Divider()
                 .background(.primary)
 
-            BundlesGridItem(model: model, showAsPurchased: true)
+            BundlesBrowser_GridItem(model: model, showAsPurchased: true)
                 .padding([.all], 20)
         }
         .preferredColorScheme(.dark)

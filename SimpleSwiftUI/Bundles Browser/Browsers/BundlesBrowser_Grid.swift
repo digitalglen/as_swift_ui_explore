@@ -1,10 +1,8 @@
 import SwiftUI
 
-struct BundlesGrid: View {
-    typealias TapDestination = ViewBuilder
-    let models: [BundlesGridItemViewModel]
+struct BundlesBrowser_Grid: View {
+    let models: [ViewModel.Bundle]
     let showAsPurchased: Bool
-    let tapDestination: ViewBuilder? = nil
     var onTap: ((_ bundle: SampleBundle) -> Void)? = nil
 
     var body: some View {
@@ -16,13 +14,13 @@ struct BundlesGrid: View {
                         LazyVGrid(columns: bundleColumns, spacing: 10) {
                             ForEach(models, id: \.self) { model in
                                 if onTap == nil {
-                                    NavigationLink(destination: BundleViewer(bundle: SampleData.sampleBundle(forID: model.id)!)) {
-                                        BundlesGridItem(model: model, showAsPurchased: showAsPurchased)
+                                    NavigationLink(destination: BundleViewer(model: ViewModel.Bundle(SampleData.bundle(forID: model.id)!))) {
+                                        BundlesBrowser_GridItem(model: model, showAsPurchased: showAsPurchased)
                                     }
                                 } else {
-                                    BundlesGridItem(model: model, showAsPurchased: showAsPurchased)
+                                    BundlesBrowser_GridItem(model: model, showAsPurchased: showAsPurchased)
                                         .onTapGesture {
-                                            onTap?(SampleData.sampleBundle)
+                                            onTap?(SampleData.bundle)
                                         }
                                 }
                             }
@@ -38,9 +36,9 @@ struct BundlesGrid: View {
 struct BundlesGrid_Previews: PreviewProvider {
     static var previews: some View {
         let bundles = Array(SampleData.bundles[0...4])
-        let models = BundlesGridViewModel(bundles).bundles
+        let models = bundles.map {ViewModel.Bundle($0)}
         VStack {
-            BundlesGrid(models: models, showAsPurchased: false)
+            BundlesBrowser_Grid(models: models, showAsPurchased: false)
                 .preferredColorScheme(.dark)
         }
             .previewLayout(.fixed(width: 900, height: 520))

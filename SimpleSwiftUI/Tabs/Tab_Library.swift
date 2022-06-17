@@ -1,12 +1,12 @@
 import SwiftUI
 
 struct Tab_Library: View {
-    let bundles = BundlesGridViewModel(SampleData.purchasedBundles).bundles
+    let models = SampleViewModels.bundles
     var body: some View {
         NavigationView {
             ZStack {
                 ScrollView {
-                    BundlesGrid(models: bundles, showAsPurchased: true)
+                    BundlesBrowser(models: models, showAsPurchased: true)
                 }
             }
             .navigationTitle("Library")

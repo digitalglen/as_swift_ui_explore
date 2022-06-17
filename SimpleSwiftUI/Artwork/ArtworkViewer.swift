@@ -1,9 +1,13 @@
+import Foundation
 import SwiftUI
 
 struct ArtworkViewer: View {
     @ObservedObject var state: PuzzleState = PuzzleState()
-    @State var overlayIsVisible: Bool = true
-    let artwork: ArtworkViewModel
+    @State private var isSharePresented: Bool = false
+    let artwork: ViewModel.Artwork
+    var shareText: String {artwork.title}
+    var shareImage: UIImage {artwork.uiImageLarge!}
+    var shareURL: URL {Bundle.main.url(forResource: artwork.imageLargeName, withExtension: nil)!}
     var body: some View {
         ZStack {
             SampleViews.image(for: artwork.imageLargeName)            
@@ -12,23 +16,33 @@ struct ArtworkViewer: View {
                 .cornerRadius(20)
                 .padding(20)
 
-            Overlay(artwork: artwork) {
-                state.artworkID = artwork.id
-                state.isPresented = true
+            Overlay(artwork: artwork) { target in
+                switch target {
+                case .play:
+                    state.artworkID = artwork.id
+                    state.isPresented = true
+                case .share:
+                    isSharePresented = true
+                }
             }
         }
         .ignoresSafeArea()
         .fullScreenCover(isPresented: $state.isPresented, content: {
             VStack {
-                PuzzlePlayer(state: state)
+                PuzzlePlayer(state: state, artwork: artwork)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+        })
+        .sheet(isPresented: $isSharePresented, onDismiss: {
+        }, content: {
+            ActivityViewController(activityItems: [shareText, shareImage, shareURL])
         })
     }
 
     struct Overlay: View {
-        let artwork: ArtworkViewModel
-        let onTap: (() -> Void)
+        enum Target {case play, share}
+        let artwork: ViewModel.Artwork
+        let onTap: ((Target) -> Void)
         var body: some View {
             HStack(alignment: .center) {
                 VStack {
@@ -46,7 +60,7 @@ struct ArtworkViewer: View {
                                     .foregroundColor(.secondary)
                                 
                                 PlayButton() {
-                                    onTap()
+                                    onTap(.play)
                                 }
                             }
                             .padding(50)
@@ -55,6 +69,8 @@ struct ArtworkViewer: View {
                         Toolbar() { target in
                             switch target {
                             case .tiling: break
+                            case .share:
+                                onTap(.share)
                             }
                         }
                     }
@@ -88,7 +104,7 @@ struct ArtworkViewer: View {
     }
     
     struct Toolbar: View {
-        enum Target {case tiling}
+        enum Target {case tiling, share}
         let onTap: ((Target) -> Void)
         var body: some View {
             HStack {
@@ -98,16 +114,21 @@ struct ArtworkViewer: View {
                     Image(systemName: "hexagon")
                 })
                 Spacer()
+                Button(action: {
+                    onTap(.share)
+                }, label: {
+                    Image(systemName: "square.and.arrow.up")
+                })
             }
-            .foregroundColor(Color.gray)
-            .padding()
+            .foregroundColor(.primary)
+            .padding(20)
         }
     }
 }
 
 struct ArtworkViewer_Previews: PreviewProvider {
     static var previews: some View {
-        ArtworkViewer(artwork: ArtworkViewModel(SampleData.randomArtwork))
+        ArtworkViewer(artwork: ViewModel.Artwork(SampleData.randomArtwork))
             .preferredColorScheme(.dark)
     }
 }

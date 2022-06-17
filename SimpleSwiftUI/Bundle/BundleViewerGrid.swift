@@ -1,8 +1,7 @@
 import SwiftUI
 
 struct BundleViewerGrid: View {
-    let model: BundlesGridItemViewModel
-    let showAsPurchased: Bool
+    let model: ViewModel.Bundle
     
     let cellSpacing: Double = 2
     var columns: [GridItem] { Array(repeating: GridItem(.flexible(), spacing: cellSpacing, alignment: .center), count: 3) }
@@ -26,8 +25,8 @@ struct BundleViewerGrid: View {
 
 struct BundleViewerGrid_Previews: PreviewProvider {
     static var previews: some View {
-        let model = BundlesGridItemViewModel(SampleData.sampleBundle)
-        BundleViewerGrid(model: model, showAsPurchased: false)
+        let model = ViewModel.Bundle(SampleData.bundle)
+        BundleViewerGrid(model: model)
             .padding([.all], 20)
             .preferredColorScheme(.dark)
     }

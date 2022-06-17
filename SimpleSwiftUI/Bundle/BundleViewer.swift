@@ -1,20 +1,17 @@
 import SwiftUI
 
 struct BundleViewer: View {
-    let bundle: SampleBundle
-    var model: BundlesGridItemViewModel {BundlesGridItemViewModel(bundle)}
+    let model: ViewModel.Bundle
     
     var body: some View {
-        ZStack(alignment: .top) {
-            BundleViewerGrid(model: model, showAsPurchased: true)
-        }
-        .navigationBarTitle(bundle.title)
+        BundleViewerGrid(model: model)
+            .navigationBarTitle(model.title)
     }
 }
 
 struct BundleViewer_Previews: PreviewProvider {
     static var previews: some View {
-        BundleViewer(bundle: SampleData.sampleBundle)
+        BundleViewer(model: ViewModel.Bundle(SampleData.bundle))
             .preferredColorScheme(.dark)
     }
 }

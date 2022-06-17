@@ -6,14 +6,16 @@ struct SampleData {
     static var cache: Cache = Cache()
 
     static var cachedBundles: [SampleBundle]? = nil
-    static var sampleBundles: [SampleBundle] {
+    static var bundles: [SampleBundle] {
         if let fromCache = cache.bundles.all {return fromCache}
-        cache.bundles.all = sampleBundleFileNames.map {sampleBundle(filename: $0)}
-        return cache.bundles.all ?? []
+        cache.bundles.all = bundleFileNames.map {bundle(filename: $0)}
+        return cache.bundles.all?.sorted { one, two in
+            one.title < two.title
+        } ?? []
     }
 
     private static var allImageNames: [String] {
-        sampleBundles.reduce([]) { partialResult, bundle in
+        bundles.reduce([]) { partialResult, bundle in
             partialResult + bundle.artworks.map {$0.imageSquareName}
         }
     }
@@ -22,16 +24,16 @@ struct SampleData {
         allImageNames.dropLast(allImageNames.count - count)
     }
     
-    static var sampleArtwork: SampleArtwork {
-        sampleBundle.artworks.first!
+    static var artwork: SampleArtwork {
+        bundle.artworks.first!
     }
     static var randomArtwork: SampleArtwork {
-        sampleBundle.artworks.randomElement()!
+        bundle.artworks.randomElement()!
     }
 
-    static func sampleArtwork(forID id: SampleArtwork.ID) -> SampleArtwork? {
+    static func artwork(forID id: SampleArtwork.ID) -> SampleArtwork? {
         var match: SampleArtwork? = nil
-        sampleBundles.forEach {
+        bundles.forEach {
             if let artwork = $0.artworks.filter({$0.id == id}).first {
                 match = artwork
             }
@@ -39,11 +41,11 @@ struct SampleData {
         return match
     }
     
-    static var sampleBundle: SampleBundle {
-        sampleBundles.last!
+    static var bundle: SampleBundle {
+        bundles.last!
     }
 
-    static func sampleBundle(filename: String) -> SampleBundle {
+    static func bundle(filename: String) -> SampleBundle {
         if let jsonBundle = SampleJson().loadJson(filename: filename), let jsonArtworks = jsonBundle.artworks {
             let artworks = jsonArtworks.map {SampleArtwork(jsonArtwork: $0)}
 //            print(artworks)
@@ -53,15 +55,15 @@ struct SampleData {
         }
     }
         
-    static func sampleBundle(forID id: SampleBundle.ID) -> SampleBundle? {
-        sampleBundles.filter {$0.id == id}.first
+    static func bundle(forID id: SampleBundle.ID) -> SampleBundle? {
+        bundles.filter {$0.id == id}.first
     }
     
     static var purchasedBundles: [SampleBundle] {
         if let cached = cache.bundles.purchased {return cached}
         var randoms = Set<SampleBundle>()
         for _ in 0...1000 {
-            if let random = sampleBundles.randomElement() {
+            if let random = bundles.randomElement() {
                 randoms.insert(random)
             }
             if randoms.count >= 5 {
@@ -70,12 +72,6 @@ struct SampleData {
         }
         cache.bundles.purchased = Array(randoms).sorted { $0.title < $1.title }
         return cache.bundles.purchased ?? []
-    }
-
-    static var bundles: [SampleBundle] {
-        sampleBundles.sorted { one, two in
-            one.title < two.title
-        }
     }
 }
 
@@ -90,7 +86,7 @@ extension SampleData {
 }
 
 extension SampleData {
-    static var sampleBundleFileNames: [String] {[
+    static var bundleFileNames: [String] {[
 //        "collection_alma_tadema",
 //        "collection_angelico_1",
 //        "collection_angelico_2",
@@ -109,9 +105,9 @@ extension SampleData {
         "collection_masterpieces_4",
         "collection_masterpieces_5",
         "collection_masterpieces_6",
-//        "collection_loc_1",
-//        "collection_loc_2",
-//        "collection_loc_3",
+        "collection_loc_1",
+        "collection_loc_2",
+        "collection_loc_3",
     ]        
     }
     

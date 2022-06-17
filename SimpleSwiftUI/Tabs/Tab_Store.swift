@@ -2,13 +2,13 @@ import SwiftUI
 
 struct Tab_Store: View {
     @ObservedObject var state: StoreState = StoreState()
-    let bundles = BundlesGridViewModel(SampleData.bundles).bundles
+    let models = SampleViewModels.purchasedBundles
     var body: some View {
         NavigationView {
             ZStack {
                 VStack {
                     ScrollView {
-                        BundlesGrid(models: bundles, showAsPurchased: false) { bundle in
+                        BundlesBrowser(models: models, showAsPurchased: false) { bundle in
                             withAnimation {
                                 state.purchaseSheetBundle = bundle
                                 state.purchaseSheetIsVisible = true
