@@ -4,21 +4,34 @@ struct ArtworkViewModel: Hashable, Identifiable {
     typealias ID = String
     let id: ID
     let title: String
-    let imageName: String
-    var image: Image? {
-        guard let imageData = UIImage(named: imageName) else {return nil}
+    let artist: String
+    let year: String
+    let imageLargeName: String
+    var imageLarge: Image? {
+        guard let imageData = UIImage(named: imageLargeName) else {return nil}
         return Image(uiImage: imageData)
     }
-    
-    init(id: String, title: String, price: String, imageName: String) {
+    let imageSquareName: String
+    var imageSquare: Image? {
+        guard let imageData = UIImage(named: imageSquareName) else {return nil}
+        return Image(uiImage: imageData)
+    }
+
+    init(id: String, title: String, artist: String, year: String, imageLargeName: String, imageSquareName: String) {
         self.id = id
         self.title = title
-        self.imageName = imageName
+        self.artist = artist
+        self.year = year
+        self.imageLargeName = imageLargeName
+        self.imageSquareName = imageSquareName
     }
     init(_ artwork: SampleArtwork) {
         self.id = artwork.id
         self.title = artwork.title
-        self.imageName = artwork.imageSquareName
+        self.artist = artwork.artist
+        self.year = artwork.year
+        self.imageLargeName = artwork.imageLargeName
+        self.imageSquareName = artwork.imageSquareName
     }
 }
 

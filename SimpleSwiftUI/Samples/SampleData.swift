@@ -25,7 +25,10 @@ struct SampleData {
     static var sampleArtwork: SampleArtwork {
         sampleBundle.artworks.first!
     }
-    
+    static var randomArtwork: SampleArtwork {
+        sampleBundle.artworks.randomElement()!
+    }
+
     static func sampleArtwork(forID id: SampleArtwork.ID) -> SampleArtwork? {
         var match: SampleArtwork? = nil
         sampleBundles.forEach {

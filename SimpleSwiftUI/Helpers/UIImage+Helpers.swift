@@ -71,11 +71,11 @@ public extension UIImage {
     static func fromView(_ view: UIView, frame: CGRect? = nil) -> UIImage {
         let frame = frame ?? view.frame
         let renderer = UIGraphicsImageRenderer(size: frame.size)
-        view.transform.translatedBy(x: -frame.origin.x, y: -frame.origin.y)
+        view.transform = view.transform.translatedBy(x: -frame.origin.x, y: -frame.origin.y)
         let renderedImage = renderer.image { context in
             view.layer.render(in: context.cgContext)
         }
-        view.transform.translatedBy(x: frame.origin.x, y: frame.origin.y)
+        view.transform = view.transform.translatedBy(x: frame.origin.x, y: frame.origin.y)
         return renderedImage
     }
     

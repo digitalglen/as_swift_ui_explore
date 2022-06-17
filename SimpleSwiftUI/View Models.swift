@@ -8,5 +8,6 @@ class StoreState: ObservableObject {
 
 class PuzzleState: ObservableObject {
     @Published var isPresented: Bool = false
-    @Published var artwork: SampleArtwork = SampleData.sampleArtwork
+    @Published var artworkID: SampleArtwork.ID = SampleData.sampleArtwork.id
+    var artwork: SampleArtwork {SampleData.sampleArtwork(forID: artworkID) ?? SampleData.sampleArtwork}
 }

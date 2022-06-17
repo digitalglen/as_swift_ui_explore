@@ -6,7 +6,7 @@ struct BundlesGridItem: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 0) {
-            SquareImagesGrid(imageNames: model.artworks.map {$0.imageName})
+            SquareImagesGrid(imageNames: model.artworks.map {$0.imageSquareName})
             Footer(title: model.title, price: showAsPurchased ? nil : model.price)
         }
     }

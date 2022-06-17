@@ -11,8 +11,8 @@ struct BundleViewerGrid: View {
             LazyVGrid(columns: columns, spacing: cellSpacing) {
                 ForEach(model.artworks, id: \.self) { artwork in
                     ZStack(alignment: .top) {
-                        NavigationLink(destination: ArtworkViewer(artwork: SampleData.sampleArtwork(forID: artwork.id)!)) {
-                            SampleViews.image(for: artwork.imageName)
+                        NavigationLink(destination: ArtworkViewer(artwork: artwork)) {
+                            SampleViews.image(for: artwork.imageSquareName)
                                 .squared()
                         }
                     }
