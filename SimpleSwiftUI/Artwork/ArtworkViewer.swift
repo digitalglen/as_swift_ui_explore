@@ -26,6 +26,7 @@ struct ArtworkViewer: View {
                 }
             }
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .ignoresSafeArea()
         .preferredColorScheme(.dark)
         .fullScreenCover(isPresented: $state.isPresented, content: {
@@ -112,38 +113,42 @@ struct ArtworkViewer: View {
     struct PlayButton: View {
         @State private var percentCalculated: Double = 0
         @State private var buttonScale: Double = 0.95
+        @State private var buttonOpacity: Double = 0.1
         var percentCompleted: Double
         let onTap: (() -> Void)
         let outerRingSize: Double = 100
         let progressLineWidth: Double = 10
         var progressRingSize: Double {outerRingSize - progressLineWidth}
         var body: some View {
-            ZStack {
-                Button(action: {
-                    onTap()
-                }, label: {
-                    Image(systemName: "play.fill")
-                        .font( Font.system(size: 50))
-                        .foregroundColor(.primary.opacity(buttonScale >= 1.0 ? 1.0 : 0.1))
-                        .scaleEffect(x: buttonScale, y: buttonScale)
-                })
-                
-                ZStack {
-                    RingShape(percent: 1.0)
-                        .stroke(Color.primary.opacity(0.10), lineWidth: progressLineWidth)
-                        .frame(width: progressRingSize, height: progressRingSize)
-                    RingShape(percent: percentCalculated)
-                        .stroke(Color.primary.opacity(0.60), lineWidth: progressLineWidth)
-                        .frame(width: progressRingSize, height: progressRingSize)
+            ZStack(alignment: .center) {
+                ZStack(alignment: .center) {
+                    Button(action: {
+                        onTap()
+                    }, label: {
+                        Image(systemName: "play.fill")
+                            .font( Font.system(size: 50))
+                            .foregroundColor(.primary.opacity(buttonOpacity))
+                            .scaleEffect(x: buttonScale, y: buttonScale)
+                    })
+                    
+                    ZStack {
+                        RingShape(percent: 1.0)
+                            .stroke(Color.primary.opacity(0.10), lineWidth: progressLineWidth)
+                            .frame(width: progressRingSize, height: progressRingSize)
+                        RingShape(percent: percentCalculated)
+                            .stroke(Color.primary.opacity(0.60), lineWidth: progressLineWidth)
+                            .frame(width: progressRingSize, height: progressRingSize)
+                    }
+                    .foregroundColor(.primary.opacity(0.5))
                 }
-                .foregroundColor(.primary.opacity(0.5))
             }
             .onAppear() {
                 withAnimation(.spring().delay(0.5)) {
                     percentCalculated = percentCompleted
+                    buttonOpacity = 1.0
                 }
                 withAnimation(.easeInOut(duration: 0.1).delay(0.80)) {
-                    buttonScale = 1.05
+                    buttonScale = 1.1
                 }
                 withAnimation(.easeInOut(duration: 0.1).delay(0.90)) {
                     buttonScale = 1.0
