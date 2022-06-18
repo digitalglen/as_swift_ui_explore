@@ -4,22 +4,22 @@ import SwiftUI
 struct ArtworkViewer: View {
     @ObservedObject var state: PuzzleState = PuzzleState()
     @State private var isSharePresented: Bool = false
-    let artwork: ViewModel.Artwork
-    var shareText: String {artwork.title}
-    var shareImage: UIImage {artwork.uiImageLarge!}
-    var shareURL: URL {Bundle.main.url(forResource: artwork.imageLargeName, withExtension: nil)!}
+    let model: ViewModel.Artwork
+    var shareText: String {model.title}
+    var shareImage: UIImage {model.uiImageLarge!}
+    var shareURL: URL {Bundle.main.url(forResource: model.imageLargeName, withExtension: nil)!}
     var body: some View {
         ZStack {
-            SampleViews.image(for: artwork.imageLargeName)            
+            SampleViews.image(for: model.imageLargeName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(20)
                 .padding(20)
 
-            Overlay(artwork: artwork) { target in
+            Overlay(model: model) { target in
                 switch target {
                 case .play:
-                    state.artworkID = artwork.id
+                    state.artworkID = model.id
                     state.isPresented = true
                 case .share:
                     isSharePresented = true
@@ -27,9 +27,10 @@ struct ArtworkViewer: View {
             }
         }
         .ignoresSafeArea()
+        .preferredColorScheme(.dark)
         .fullScreenCover(isPresented: $state.isPresented, content: {
             VStack {
-                PuzzlePlayer(state: state, artwork: artwork)
+                PuzzlePlayer(state: state, model: model)
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         })
@@ -41,7 +42,7 @@ struct ArtworkViewer: View {
 
     struct Overlay: View {
         enum Target {case play, share}
-        let artwork: ViewModel.Artwork
+        let model: ViewModel.Artwork
         let onTap: ((Target) -> Void)
         var body: some View {
             HStack(alignment: .center) {
@@ -49,19 +50,19 @@ struct ArtworkViewer: View {
                     ZStack(alignment: .bottom) {
                         VStack {
                             VStack(spacing: 8) {
-                                Text("\(artwork.title)")
+                                Text("\(model.title)")
                                     .font(.largeTitle)
                                     .foregroundColor(.primary)
-                                Text("\(artwork.artist)")
+                                Text("\(model.artist)")
                                     .font(.title)
                                     .foregroundColor(.secondary)
-                                Text("\(artwork.year)")
+                                Text("\(model.year)")
                                     .font(.body)
                                     .foregroundColor(.secondary)
-                                
-                                PlayButton() {
+                                PlayButton(percentCompleted: 0.75) {
                                     onTap(.play)
                                 }
+                                .padding(.top, 20)
                             }
                             .padding(50)
                             
@@ -81,24 +82,72 @@ struct ArtworkViewer: View {
             }
         }
     }
+    
+    struct RingShape: Shape {
+        var percent: Double
+        func path(in rect: CGRect) -> Path {
+            var start: Double = 0
+            var end: Double = percent * 360
+
+            // Start at 12 O-clock instead of 3
+            start -= 90
+            end -= 90
+
+            var p = Path()
+            p.addArc(center: CGPoint(x: rect.size.width/2, y: rect.size.width/2),
+                     radius: rect.size.width/2,
+                     startAngle: Angle(degrees: start),
+                     endAngle: Angle(degrees: end),
+                     clockwise: false)
+            return p
+        }
+        
+        
+        var animatableData: Double {
+            get { return percent }
+            set { percent = newValue }
+        }
+    }
 
     struct PlayButton: View {
+        @State private var percentCalculated: Double = 0
+        @State private var buttonScale: Double = 0.95
+        var percentCompleted: Double
         let onTap: (() -> Void)
+        let outerRingSize: Double = 100
+        let progressLineWidth: Double = 10
+        var progressRingSize: Double {outerRingSize - progressLineWidth}
         var body: some View {
             ZStack {
-                Image(systemName: "circle.fill")
-                    .font( Font.system(size: 180))
-                    .foregroundColor(.primary.opacity(0.5))
-                Image(systemName: "circle.fill")
-                    .font( Font.system(size: 140))
-                    .foregroundColor(.primary.opacity(0.5))
                 Button(action: {
                     onTap()
                 }, label: {
                     Image(systemName: "play.fill")
-                        .font( Font.system(size: 100))
-                        .foregroundColor(.black)
+                        .font( Font.system(size: 50))
+                        .foregroundColor(.primary.opacity(buttonScale >= 1.0 ? 1.0 : 0.1))
+                        .scaleEffect(x: buttonScale, y: buttonScale)
                 })
+                
+                ZStack {
+                    RingShape(percent: 1.0)
+                        .stroke(Color.primary.opacity(0.10), lineWidth: progressLineWidth)
+                        .frame(width: progressRingSize, height: progressRingSize)
+                    RingShape(percent: percentCalculated)
+                        .stroke(Color.primary.opacity(0.60), lineWidth: progressLineWidth)
+                        .frame(width: progressRingSize, height: progressRingSize)
+                }
+                .foregroundColor(.primary.opacity(0.5))
+            }
+            .onAppear() {
+                withAnimation(.spring().delay(0.5)) {
+                    percentCalculated = percentCompleted
+                }
+                withAnimation(.easeInOut(duration: 0.1).delay(0.80)) {
+                    buttonScale = 1.05
+                }
+                withAnimation(.easeInOut(duration: 0.1).delay(0.90)) {
+                    buttonScale = 1.0
+                }
             }
         }
     }
@@ -128,7 +177,6 @@ struct ArtworkViewer: View {
 
 struct ArtworkViewer_Previews: PreviewProvider {
     static var previews: some View {
-        ArtworkViewer(artwork: ViewModel.Artwork(SampleData.randomArtwork))
-            .preferredColorScheme(.dark)
+        ArtworkViewer(model: ViewModel.Artwork(SampleData.randomArtwork))
     }
 }

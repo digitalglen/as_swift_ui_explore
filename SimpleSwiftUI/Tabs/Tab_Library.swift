@@ -21,6 +21,5 @@ struct Tab_Library_Previews: PreviewProvider {
     static var previews: some View {
         Tab_Library()
             .previewDisplayName("Library")
-            .preferredColorScheme(.dark)
     }
 }

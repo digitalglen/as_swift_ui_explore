@@ -15,6 +15,5 @@ struct Tab_Today_Previews: PreviewProvider {
     static var previews: some View {
         Tab_Today()
             .previewDisplayName("Today")
-            .preferredColorScheme(.dark)
     }
 }

@@ -64,6 +64,5 @@ struct Tab_Settings_Previews: PreviewProvider {
     static var previews: some View {
         Tab_Settings()
             .previewDisplayName("Settings")
-            .preferredColorScheme(.dark)
     }
 }

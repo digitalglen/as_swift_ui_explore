@@ -31,6 +31,5 @@ struct Tab_Store_Previews: PreviewProvider {
     static var previews: some View {
         Tab_Store()
             .previewDisplayName("Store")
-            .preferredColorScheme(.dark)
     }
 }

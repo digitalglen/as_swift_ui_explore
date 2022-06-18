@@ -30,6 +30,7 @@ struct BundlesBrowser_Grid: View {
             }
             .padding(20)
         }
+        .preferredColorScheme(.dark)
     }
 }
 
@@ -39,7 +40,6 @@ struct BundlesGrid_Previews: PreviewProvider {
         let models = bundles.map {ViewModel.Bundle($0)}
         VStack {
             BundlesBrowser_Grid(models: models, showAsPurchased: false)
-                .preferredColorScheme(.dark)
         }
             .previewLayout(.fixed(width: 900, height: 520))
             .previewDisplayName("Bundles Grid")

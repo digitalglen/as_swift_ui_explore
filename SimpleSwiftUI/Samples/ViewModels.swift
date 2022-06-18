@@ -2,8 +2,17 @@ import SwiftUI
 
 struct ViewModel {
     struct samples {
+        static var artwork: ViewModel.Artwork {
+            ViewModel.Artwork( SampleData.artwork )
+        }
+        static var randomArtwork: ViewModel.Artwork {
+            ViewModel.Artwork( SampleData.randomArtwork )
+        }
         static var bundle: ViewModel.Bundle {
-            bundles.last!
+            ViewModel.Bundle( SampleData.bundle )
+        }
+        static var randomBundle: ViewModel.Bundle {
+            ViewModel.Bundle( SampleData.randomBundle )
         }
         static var bundles: [ViewModel.Bundle] {
             SampleData.bundles.map { ViewModel.Bundle($0) }

@@ -54,6 +54,5 @@ struct Tabs_Previews: PreviewProvider {
         Tabs()
             .previewLayout(.sizeThatFits)
             .previewDisplayName("Tabs")
-            .preferredColorScheme(.dark)
     }
 }

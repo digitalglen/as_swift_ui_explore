@@ -44,6 +44,9 @@ struct SampleData {
     static var bundle: SampleBundle {
         bundles.last!
     }
+    static var randomBundle: SampleBundle {
+        bundles.randomElement()!
+    }
 
     static func bundle(filename: String) -> SampleBundle {
         if let jsonBundle = SampleJson().loadJson(filename: filename), let jsonArtworks = jsonBundle.artworks {
@@ -87,18 +90,18 @@ extension SampleData {
 
 extension SampleData {
     static var bundleFileNames: [String] {[
-//        "collection_alma_tadema",
-//        "collection_angelico_1",
-//        "collection_angelico_2",
-//        "collection_art_nouveau_posters",
-//        "collection_bierstadt",
-//        "collection_bosch",
-//        "collection_bosch_haywain",
-//        "collection_bouguereau_1",
-//        "collection_bouguereau_2",
-//        "collection_brueghel",
-//        "collection_brueghel_games",
-//        "collection_brueghel_proverbs",
+        "collection_alma_tadema",
+        "collection_angelico_1",
+        "collection_angelico_2",
+        "collection_art_nouveau_posters",
+        "collection_bierstadt",
+        "collection_bosch",
+        "collection_bosch_haywain",
+        "collection_bouguereau_1",
+        "collection_bouguereau_2",
+        "collection_brueghel",
+        "collection_brueghel_games",
+        "collection_brueghel_proverbs",
         "collection_masterpieces_1",
         "collection_masterpieces_2",
         "collection_masterpieces_3",

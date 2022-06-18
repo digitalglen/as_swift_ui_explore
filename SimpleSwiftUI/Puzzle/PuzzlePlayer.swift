@@ -5,18 +5,18 @@ import MapKit
 struct PuzzlePlayer: View {
     @ObservedObject var state: PuzzleState
     @State var overlayIsVisible: Bool = true
-    let artwork: ViewModel.Artwork
+    let model: ViewModel.Artwork
     
     var body: some View {
         ZStack {
-            SampleViews.image(for: artwork.imageLargeName)
+            SampleViews.image(for: model.imageLargeName)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .cornerRadius(20)
                 .padding(20)
 
-            Overlay(artwork: artwork) { target in
-                state.artworkID = artwork.id
+            Overlay(model: model) { target in
+                state.artworkID = model.id
                 state.isPresented = true
             }
         }
@@ -29,7 +29,7 @@ struct PuzzlePlayer: View {
     
     struct Overlay: View {
         enum Target {case tiling}
-        let artwork: ViewModel.Artwork
+        let model: ViewModel.Artwork
         let onTap: ((Target) -> Void)
         var body: some View {
             HStack(alignment: .center) {
@@ -37,13 +37,13 @@ struct PuzzlePlayer: View {
                     ZStack(alignment: .bottom) {
                         VStack {
                             VStack(spacing: 8) {
-                                Text("\(artwork.title)")
+                                Text("\(model.title)")
                                     .font(.largeTitle)
                                     .foregroundColor(.primary)
-                                Text("\(artwork.artist)")
+                                Text("\(model.artist)")
                                     .font(.title)
                                     .foregroundColor(.secondary)
-                                Text("\(artwork.year)")
+                                Text("\(model.year)")
                                     .font(.body)
                                     .foregroundColor(.secondary)
                             }
@@ -85,7 +85,7 @@ struct PuzzlePlayer: View {
 
 struct PuzzlePlayer_Previews: PreviewProvider {
     static var previews: some View {
-        PuzzlePlayer(state: PuzzleState(), artwork: ViewModel.Artwork(SampleData.randomArtwork))
+        PuzzlePlayer(state: PuzzleState(), model: ViewModel.samples.randomArtwork)
             .preferredColorScheme(.dark)
     }
 }
