@@ -19,11 +19,11 @@ struct BundlesBrowser_Carousel: View {
                                     if onTap == nil {
                                         NavigationLink(destination: BundleViewer(model: ViewModel.Bundle(SampleData.bundle(forID: model.id)!))) {
                                             BundlesBrowser_CarouselTile(model: model, showAsPurchased: showAsPurchased)
-                                                .frame(width: geometry.size.width * 0.5)
+                                                .frame(width: geometry.size.width * 0.65)
                                         }
                                     } else {
                                         BundlesBrowser_CarouselTile(model: model, showAsPurchased: showAsPurchased)
-                                            .frame(width: geometry.size.width * 0.5)
+                                            .frame(width: geometry.size.width * 0.65)
                                             .onTapGesture {
                                                 onTap?(SampleData.bundle)
                                             }

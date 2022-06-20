@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct BundlesBrowser: View {
-    enum Style {case grid, carousel}
+    enum Style {case grid, carousel, list}
     let models: [ViewModel.Bundle]
     let showAsPurchased: Bool
     var style: Style = .carousel
@@ -13,6 +13,8 @@ struct BundlesBrowser: View {
             BundlesBrowser_Grid(models: models, showAsPurchased: showAsPurchased, onTap: onTap)
         case .carousel:
             BundlesBrowser_Carousel(models: models, showAsPurchased: showAsPurchased, onTap: onTap)
+        case .list:
+            BundlesBrowser_List(models: models, showAsPurchased: showAsPurchased, onTap: onTap)
         }
     }
 }
