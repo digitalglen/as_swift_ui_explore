@@ -1,25 +1,42 @@
 import SwiftUI
 
 struct BundlesBrowser_Carousel: View {
-    let models: [ViewModel.Artwork]
+    let models: [ViewModel.Bundle]
     let showAsPurchased: Bool
+    let spacing: Double = 40
     var onTap: ((_ bundle: SampleBundle) -> Void)? = nil
     
     var body: some View {
         GeometryReader { geometry in
-            ZStack {
-                BackgroundImage()
-                
+            ZStack(alignment: .center) {
+                //                BackgroundImage()
                 ScrollView([.horizontal], showsIndicators: false) {
-                    HStack(spacing: 20) {
-                        ForEach(models) {model in
-                            BundlesBrowser_CarouselTile(model: model)
+                    HStack {
+                        Spacer(minLength: spacing)
+                        VStack {
+                            HStack(spacing: spacing) {
+                                ForEach(models) {model in
+                                    if onTap == nil {
+                                        NavigationLink(destination: BundleViewer(model: ViewModel.Bundle(SampleData.bundle(forID: model.id)!))) {
+                                            BundlesBrowser_CarouselTile(model: model, showAsPurchased: showAsPurchased)
+                                                .frame(width: geometry.size.width * 0.5)
+                                        }
+                                    } else {
+                                        BundlesBrowser_CarouselTile(model: model, showAsPurchased: showAsPurchased)
+                                            .frame(width: geometry.size.width * 0.5)
+                                            .onTapGesture {
+                                                onTap?(SampleData.bundle)
+                                            }
+                                    }
+                                }
+                                .frame(maxHeight: .infinity)
+                            }
                         }
+                        Spacer(minLength: spacing)
                     }
                 }
-//                .background(.orange)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
+            .frame(maxHeight: .infinity)
         }
     }
     
@@ -36,12 +53,12 @@ struct BundlesBrowser_Carousel: View {
 
 struct BundlesBrowser_Carousel_Previews: PreviewProvider {
     static var previews: some View {
-        let models = ViewModel.samples.randomBundle.artworks
+        let models = ViewModel.samples.bundles
         VStack {
             BundlesBrowser_Carousel(models: models, showAsPurchased: false)
         }
         .preferredColorScheme(.dark)
-        .previewLayout(.fixed(width: 900, height: 520))
+//        .previewLayout(.fixed(width: 900, height: 520))
         .previewDisplayName("Bundles Carousel")
     }
 }

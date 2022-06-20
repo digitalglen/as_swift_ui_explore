@@ -10,6 +10,7 @@ struct Dev_PurchaseSheets: View {
                 PurchaseSheet(state: state, darkBehind: false)
                 Spacer()
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .preferredColorScheme(.dark)
         .navigationViewStyle(StackNavigationViewStyle())

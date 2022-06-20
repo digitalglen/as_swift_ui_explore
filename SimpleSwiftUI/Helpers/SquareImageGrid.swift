@@ -15,7 +15,6 @@ struct SquareImagesGrid: View {
                 }
             }
         }
-        .frame(maxWidth: .infinity)
         .cornerRadius(cornerRadius)
         }
 }

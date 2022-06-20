@@ -66,7 +66,7 @@ struct SampleData {
         if let cached = cache.bundles.purchased {return cached}
         var randoms = Set<SampleBundle>()
         for _ in 0...1000 {
-            if let random = bundles.randomElement() {
+            if let random = bundles.dropFirst().randomElement() {
                 randoms.insert(random)
             }
             if randoms.count >= 5 {

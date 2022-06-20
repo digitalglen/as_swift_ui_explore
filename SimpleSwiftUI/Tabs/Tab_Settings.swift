@@ -7,56 +7,57 @@ struct Tab_Settings: View {
     var outerPadding: Double {self.isCompact ? 0 : 0}
     var maxWidth: Double {self.isCompact ? .infinity : 600}
     var body: some View {
-        HStack {
-            VStack {
-                Text("Settings")
-                Spacer()
-                
-                Form {
-                    Section(header: Text("Preferences")) {
-                        Toggle(isOn: $playSounds) {
-                            Text("Play Sounds")
+        NavigationView {
+            HStack {
+                VStack {
+                    Form {
+                        Section(header: Text("Preferences")) {
+                            Toggle(isOn: $playSounds) {
+                                Text("Play Sounds")
+                            }
+                            Toggle(isOn: $playMusic) {
+                                Text("Play Music")
+                            }
                         }
-                        Toggle(isOn: $playMusic) {
-                            Text("Play Music")
+                        
+                        Section(header: Text("Help")) {
+                            NavigationLink(destination: Tab_Today()) {
+                                Text("How to Play")
+                            }
+                            NavigationLink(destination: Tab_Today()) {
+                                HStack {
+                                    Image(systemName: "envelope")
+                                    Text("Send us an email")
+                                }
+                            }
                         }
-                    }
-                    
-                    Section(header: Text("Help")) {
-                        NavigationLink(destination: Tab_Today()) {
-                            Text("How to Play")
-                        }
-                        NavigationLink(destination: Tab_Today()) {
+                        
+                        Section(header: Text("About")) {
                             HStack {
-                                Image(systemName: "envelope")
-                                Text("Send us an email")
+                                Text("Version")
+                                Spacer()
+                                Text("2.2.1")
+                            }
+                            .foregroundColor(.secondary)
+                        }
+                        
+                        Section {
+                            Button(action: {
+                                print("Perform an action here...")
+                            }) {
+                                Text("Restore Purchases")
                             }
                         }
                     }
-                    
-                    Section(header: Text("About")) {
-                        HStack {
-                            Text("Version")
-                            Spacer()
-                            Text("2.2.1")
-                        }
-                        .foregroundColor(.secondary)
-                    }
-
-                    Section {
-                        Button(action: {
-                            print("Perform an action here...")
-                        }) {
-                            Text("Restore Purchases")
-                        }
-                    }
+                    //                .background( Color.ui.background )
                 }
-//                .background( Color.ui.background )
             }
             .padding(outerPadding)
-            .preferredColorScheme(.dark)
+            .frame(maxWidth: self.maxWidth)
+            .navigationTitle("Settings")
         }
-        .frame(maxWidth: self.maxWidth)
+        .preferredColorScheme(.dark)
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
@@ -66,3 +67,4 @@ struct Tab_Settings_Previews: PreviewProvider {
             .previewDisplayName("Settings")
     }
 }
+

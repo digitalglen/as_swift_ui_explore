@@ -1,51 +1,26 @@
 import SwiftUI
 
 struct BundlesBrowser_CarouselTile: View {
-    let model: ViewModel.Artwork
+    let model: ViewModel.Bundle
+    let showAsPurchased: Bool
     var cornerRadius: Double = 30
     var body: some View {
         VStack(spacing:0) {
-            ZStack(alignment: .bottom) {
-                model.imageLarge!
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-//                HStack {
-//                    VStack {
-//                        Text(model.title)
-//                            .font(.body)
-//                    }
-//                }
-//                .padding()
-//                .frame(maxWidth: .infinity)
-//                .frame(width: .infinity, height: 100)
-//                .background(.thinMaterial)
-//                .opacity(0)
-            }
-            .frame(width: 750, height: 750)
-            .cornerRadius(cornerRadius, corners: [.topLeft, .topRight])
-
-            VStack {
-                Text(model.title)
-                    .font(.body)
-                    .foregroundColor(.secondary)
-            }
-            .frame(maxWidth: 750)
-            .frame(width: .infinity, height: 60)
-//            .background(.thinMaterial.opacity(0.5))
+            BundlesBrowser_GridItem(model: model, showAsPurchased: showAsPurchased)
         }
-        .background(.black)
+       .background(.black)
         .cornerRadius(cornerRadius)
    }
 }
 
 struct BundlesBrowser_CarouselTile_Previews: PreviewProvider {
     static var previews: some View {
-        let models = ViewModel.samples.randomBundle.artworks
+        let model = ViewModel.samples.randomBundle
         VStack {
-            BundlesBrowser_Carousel(models: models, showAsPurchased: false)
+            BundlesBrowser_CarouselTile(model: model, showAsPurchased: false)
         }
         .preferredColorScheme(.dark)
-        .previewLayout(.fixed(width: 900, height: 520))
-        .previewDisplayName("Bundles Carousel")
+//        .previewLayout(.fixed(width: 900, height: 520))
+        .previewDisplayName("Bundles Carousel Tile")
     }
 }

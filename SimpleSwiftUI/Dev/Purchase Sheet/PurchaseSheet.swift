@@ -10,7 +10,8 @@ struct PurchaseSheet: View {
     }
 
     var body: some View {
-        Text("")
+        Text(" ")
+            .foregroundColor(.yellow)
         .sheet(isPresented: $state.purchaseSheetIsVisible, content: {
             VStack {
                 switch state.purchaseSheetStyle {
@@ -24,10 +25,10 @@ struct PurchaseSheet: View {
         
         if darkBehind && state.purchaseSheetIsVisible {
             Text("")
+                .ignoresSafeArea()
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .transition(.opacity)
                 .background(.black.opacity(0.75))
-                .ignoresSafeArea()
         }
     }
 }

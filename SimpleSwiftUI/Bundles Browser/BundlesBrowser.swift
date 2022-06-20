@@ -12,8 +12,7 @@ struct BundlesBrowser: View {
         case .grid:
             BundlesBrowser_Grid(models: models, showAsPurchased: showAsPurchased, onTap: onTap)
         case .carousel:
-//            BundlesBrowser_Carousel(models: models, showAsPurchased: showAsPurchased, onTap: onTap)
-            BundlesBrowser_Grid(models: models, showAsPurchased: showAsPurchased, onTap: onTap)
+            BundlesBrowser_Carousel(models: models, showAsPurchased: showAsPurchased, onTap: onTap)
         }
     }
 }
